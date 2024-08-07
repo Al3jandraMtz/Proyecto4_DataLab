@@ -33,6 +33,33 @@ Datalab se ha establecido como un socio de confianza para una variedad de empres
 ## **Procesamiento**
 
 ### 1.1 Limpieza de datos 
+
+Se realiza exploracion de los dos data set proporcionados:
+
+Nulos
+
+amazon_product
+  * about_product - 4
+  * discount_percentage - 0
+  * actual_price - 0
+  * category - 0
+  * product_name - 0
+  * product_id - 0
+  * user_id - 0
+  * discounted_price - 0
+
+amazon_review
+* user_id - 0
+* user_name - 0
+* review_title - 0
+* review_id - 0
+* review_content - 0
+* img_link - 466
+* product_link - 466
+* product_id - 0
+* rating - 0
+* rating_count - 2
+
 ### 1.2 Análisis exploratorio
 
 ### 1.3 Hipótesis
