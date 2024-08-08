@@ -36,7 +36,7 @@ Datalab se ha establecido como un socio de confianza para una variedad de empres
 
 Se realiza exploracion de los dos data set proporcionados:
 
-Nulos
+1.- Nulos
 
 amazon_product
   * about_product - 4
@@ -49,16 +49,54 @@ amazon_product
   * discounted_price - 0
 
 amazon_review
-* user_id - 0
-* user_name - 0
-* review_title - 0
-* review_id - 0
-* review_content - 0
-* img_link - 466
-* product_link - 466
-* product_id - 0
-* rating - 0
-* rating_count - 2
+  * user_id - 0
+  * user_name - 0
+  * review_title - 0
+  * review_id - 0
+  * review_content - 0
+  * img_link - 466
+  * product_link - 466
+  * product_id - 0
+  * rating - 0
+  * rating_count - 2
+
+2.- Duplicados
+
+amazon_product
+  * about_product - 130
+  * discount_percentage - 89
+  * actual_price - 190
+  * category - 136
+  * product_name - 102
+  * product_id - 96
+  * discounted_price - 1870
+
+  En product_id  detectamos que los duplicados originales (96) estan duplicados varias veces, dando un total de 214 duplicados, es decir, se visualizan 118 duplicados omitidos.
+
+  > duplicados product id (desglose)
+  >![alt text](Imagenes/image.png)
+
+amazon_review
+  * user_id - 144
+  * user_name - 144
+  * review_title - 144 originales (271 omitidos)
+  * review_id - 144 originales (271 omitidos)
+  * review_content - 141 originales (253 omitidos)
+  * img_link - 49
+  * product_link - 1
+  * product_id - 92
+  * rating - 21
+  * rating_count - 204 c
+
+  Se analizan las variables para determinar cuales duplicados podrian ser considerados importantes:
+
+  + review_id: Este identificador debería ser único para cada reseña. Duplicados en este campo podrían indicar un problema serio en la integridad de los datos, como la inserción repetida de registros.
+  + product_id:  Este campo identifica de manera única a un producto. Si bien un producto puede tener muchas reseñas, la duplicación de product_id en combinación con otros campos podría sugerir que se han repetido registros de productos, lo que podría causar problemas al analizar la cantidad de productos únicos.
+  + review_title y review_content: Estos campos contienen el contenido textual de las reseñas. Duplicados aquí podrían indicar que los usuarios están publicando reseñas repetidas, lo que podría considerarse como spam o contenido duplicado.
+
+Duplicados desglosados
+>
+>![alt text](Imagenes/1.png)
 
 ### 1.2 Análisis exploratorio
 
