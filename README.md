@@ -71,7 +71,7 @@ amazon_product
   * product_id - 96
   * discounted_price - 1870
 
-  En product_id  detectamos que los duplicados originales (96) estan duplicados varias veces, dando un total de 214 duplicados, es decir, se visualizan 118 duplicados omitidos.
+  En la columna product_id, identificamos 96 valores únicos que originalmente estaban duplicados. Sin embargo, estos valores aparecen duplicados múltiples veces, resultando en un total de 214 duplicados en el dataset. Esto significa que hay 118 duplicados adicionales que no fueron contabilizados inicialmente.
 
   > duplicados product id (desglose)
   >![alt text](Imagenes/image.png)
@@ -86,7 +86,10 @@ amazon_review
   * product_link - 1
   * product_id - 92
   * rating - 21
-  * rating_count - 204 c
+  * rating_count - 204 
+
+En las columnas review_title y review_id, identificamos 144 valores únicos que originalmente estaban duplicados. Sin embargo, estos valores aparecen duplicados múltiples veces, resultando en un total de 415 duplicados en el dataset. 
+Por otro lado, en la columna review_content, identificamos 141 valores únicos que originalmente estaban duplicados. Estos valores también aparecen duplicados múltiples veces, resultando en un total de 394 duplicados en el dataset,.
 
   Se analizan las variables para determinar cuales duplicados podrian ser considerados importantes:
 
@@ -98,6 +101,20 @@ Duplicados desglosados
 >
 >![alt text](Imagenes/1.png)
 
+3.- Valores fuera del alcance 
+
+amazon_product
+  * about_product - 0
+  * discount_percentage - 315 porcentajes que no coinden con el discounted_price
+  * actual_price - 0 precios correctos
+  * category - 0
+  * product_name - 0 
+  * product_id - 0
+  * discounted_price - 0
+  
+>
+>![alt text](image.png)
+
 ### 1.2 Análisis exploratorio
 
 ### 1.3 Hipótesis
@@ -108,7 +125,7 @@ Duplicados desglosados
 
 ### **Conclusiones**
 
-### **Recomendaciones*
+### **Recomendaciones**
 
 
 ## **Recursos**
