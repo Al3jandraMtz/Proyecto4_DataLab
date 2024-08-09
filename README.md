@@ -86,7 +86,7 @@ amazon_product
 
 
   > duplicados product id (desglose)
-  >![alt text](Imagenes/duplicados_product.png)
+  >![alt text](Imagenes/Duplicado_product.png)
 
     Acciones:
      + En la columna product_id, identificamos 96 valores únicos que originalmente estaban duplicados. Sin embargo, estos valores aparecen duplicados múltiples veces, resultando en un total de 214 duplicados en el dataset. Esto significa que hay 118 duplicados adicionales que no fueron contabilizados inicialmente, por lo que se decide a eliminarlos de nuestro data_set, como resultado, se obtuvieron un total de 1,351 registros únicos.
