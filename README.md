@@ -48,6 +48,9 @@ amazon_product
   * user_id - 0
   * discounted_price - 0
 
+ > Nulos
+ >![alt text](Imagenes/nulos.png)
+
   Acciones: Se eliminan los 4 nulos de about_product
 
 amazon_review
@@ -62,6 +65,14 @@ amazon_review
   * rating - 0
   * rating_count - 2
 
+        Acciones: 
+        + Valores nulos en img_link y product_link: Se decidió mantener los valores nulos en estas columnas ya que no son variables críticas para el análisis.
+        + Imputación de valores en rating_count: Se calcularon las medias de rating_count basadas en los valores de rating. Para el rating de 5, la media fue de 14, mientras que para el rating de 3, la media fue de 467. Estos valores fueron utilizados para imputar los nulos en rating_count.
+ 
+
+>Imputación de nulos en raiting_count
+>![alt text](Imagenes/Imputacion.png)
+
 2.- Duplicados
 
 amazon_product
@@ -73,10 +84,12 @@ amazon_product
   * product_id - 96
   * discounted_price - 1870
 
-  En la columna product_id, identificamos 96 valores únicos que originalmente estaban duplicados. Sin embargo, estos valores aparecen duplicados múltiples veces, resultando en un total de 214 duplicados en el dataset. Esto significa que hay 118 duplicados adicionales que no fueron contabilizados inicialmente.
 
   > duplicados product id (desglose)
-  >![alt text](Imagenes/image.png)
+  >![alt text](Imagenes/duplicados_product.png)
+
+    Acciones:
+     + En la columna product_id, identificamos 96 valores únicos que originalmente estaban duplicados. Sin embargo, estos valores aparecen duplicados múltiples veces, resultando en un total de 214 duplicados en el dataset. Esto significa que hay 118 duplicados adicionales que no fueron contabilizados inicialmente, por lo que se decide a eliminarlos de nuestro data_set, como resultado, se obtuvieron un total de 1,351 registros únicos.
 
 amazon_review
   * user_id - 144
@@ -90,23 +103,19 @@ amazon_review
   * rating - 21
   * rating_count - 204 
 
-En las columnas review_title y review_id, identificamos 144 valores únicos que originalmente estaban duplicados. Sin embargo, estos valores aparecen duplicados múltiples veces, resultando en un total de 415 duplicados en el dataset. 
-Por otro lado, en la columna review_content, identificamos 141 valores únicos que originalmente estaban duplicados. Estos valores también aparecen duplicados múltiples veces, resultando en un total de 394 duplicados en el dataset,.
-
-  Se analizan las variables para determinar cuales duplicados podrian ser considerados importantes:
-
-  + review_id: Este identificador debería ser único para cada reseña. Duplicados en este campo podrían indicar un problema serio en la integridad de los datos, como la inserción repetida de registros.
-  + product_id:  Este campo identifica de manera única a un producto. Si bien un producto puede tener muchas reseñas, la duplicación de product_id en combinación con otros campos podría sugerir que se han repetido registros de productos, lo que podría causar problemas al analizar la cantidad de productos únicos.
-  + review_title y review_content: Estos campos contienen el contenido textual de las reseñas. Duplicados aquí podrían indicar que los usuarios están publicando reseñas repetidas, lo que podría considerarse como spam o contenido duplicado.
 
 Duplicados desglosados
 >
->![alt text](Imagenes/1.png)
+>![alt text](Imagenes/Duplicados_review.png)
+
+    Acciones: 
+    + En la columna product_id, identificamos 92 valores únicos que originalmente estaban duplicados. Esto significa que hay 114 duplicados adicionales que no fueron contabilizados inicialmente, por lo que se decide a eliminarlos de nuestro data_set, como resultado, se obtuvieron un total de 1,351 registros únicos.
+
 
 3.- Valores fuera del alcance 
 
 amazon_product
-  * about_product - 0
+  * about_product - 4 datos faltantes
   * discount_percentage - 315 porcentajes que no coinden con el discounted_price
   * actual_price - 0 precios correctos
   * category - 0
