@@ -66,13 +66,15 @@ amazon_review
   * rating - 0
   * rating_count - 2
 
+>Imputación de nulos en raiting_count
+>![alt text](Imagenes/Imputacion.png)
+
         Acciones: 
         + Valores nulos en img_link y product_link: Se decidió mantener los valores nulos en estas columnas ya que no son variables críticas para el análisis.
         + Imputación de valores en rating_count: Se calcularon las medias de rating_count basadas en los valores de rating. Para el rating de 5, la media fue de 14, mientras que para el rating de 3, la media fue de 467. Estos valores fueron utilizados para imputar los nulos en rating_count.
  
 
->Imputación de nulos en raiting_count
->![alt text](Imagenes/Imputacion.png)
+
 
 2.- Duplicados
 
@@ -111,6 +113,7 @@ Duplicados desglosados
 
     Acciones: 
     + En la columna product_id, identificamos 92 valores únicos que originalmente estaban duplicados. Esto significa que hay 114 duplicados adicionales que no fueron contabilizados inicialmente, por lo que se decide a eliminarlos de nuestro data_set, como resultado, se obtuvieron un total de 1,351 registros únicos.
+
 
 
 3.- Valores fuera del alcance 
