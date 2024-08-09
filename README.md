@@ -49,8 +49,8 @@ amazon_product
   * discounted_price - 0
 
 
- >Nulos
- >![alt text](Imagenes/nulos.png)
+>Nulos
+>![alt text](Imagenes/nulos.png)
 
       Acciones: Se eliminan los 4 nulos de about_product
 
