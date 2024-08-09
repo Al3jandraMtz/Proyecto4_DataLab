@@ -48,6 +48,8 @@ amazon_product
   * user_id - 0
   * discounted_price - 0
 
+  Acciones: Se eliminan los 4 nulos de about_product
+
 amazon_review
   * user_id - 0
   * user_name - 0
@@ -111,9 +113,21 @@ amazon_product
   * product_name - 0 
   * product_id - 0
   * discounted_price - 0
-  
+
 >
 >![alt text](image.png)
+
+amazon_review
+  * user_id - 0
+  * user_name - 0
+  * review_title - 0
+  * review_id - 0
+  * review_content - 0
+  * img_link - 0
+  * product_link - 0
+  * product_id - 0
+  * rating - 0
+  * rating_count - 
 
 ### 1.2 Análisis exploratorio
 
