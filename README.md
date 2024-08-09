@@ -51,7 +51,7 @@ amazon_product
  > Nulos
  >![alt text](Imagenes/nulos.png)
 
-  Acciones: Se eliminan los 4 nulos de about_product
+      Acciones: Se eliminan los 4 nulos de about_product
 
 amazon_review
   * user_id - 0
