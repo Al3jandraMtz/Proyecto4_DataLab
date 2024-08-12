@@ -142,6 +142,13 @@ amazon_review
   * rating - 0
   * rating_count - 
 
+Se detectan variables con una cadena de valores dividida por comas o puntos en una misma varible ("user_id", "user_name","review_title", "review_id", "review_content"). 
+
+Se crearon tablas intermedias para desglosar columnas que contienen múltiples valores separados por comas o puntos en la tabla proyecto4datalab.amazon.cleaned_url_content_, permitiendo una manipulación y análisis más eficiente de los datos. Estos valores se combinaron luego en una consulta final.
+
+Las consultas para crear las tablas intermedias y combinarlas en una consulta final están disponibles en el archivo [tablas_intermedias.sql](URL_DEL_REPOSITORIO/tablas_intermedias.sql).
+
+
 ### 1.2 Análisis exploratorio
 
 ### 1.3 Hipótesis
