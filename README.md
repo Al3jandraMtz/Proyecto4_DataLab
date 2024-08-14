@@ -38,7 +38,7 @@ Se realiza exploracion de los dos data set proporcionados:
 
 1.- Nulos
 
-amazon_product
+Tabla: amazon_product
   * about_product - 4
   * discount_percentage - 0
   * actual_price - 0
@@ -54,7 +54,7 @@ amazon_product
 
       Acciones: Se eliminan los 4 nulos de about_product
 
-amazon_review
+Tabla: amazon_review
   * user_id - 0
   * user_name - 0
   * review_title - 0
@@ -78,7 +78,7 @@ amazon_review
 
 2.- Duplicados
 
-amazon_product
+Tabla: amazon_product
   * about_product - 130
   * discount_percentage - 89
   * actual_price - 190
@@ -94,7 +94,7 @@ amazon_product
     Acciones:
      + En la columna product_id, identificamos 96 valores únicos que originalmente estaban duplicados. Sin embargo, estos valores aparecen duplicados múltiples veces, resultando en un total de 214 duplicados en el dataset. Esto significa que hay 118 duplicados adicionales que no fueron contabilizados inicialmente, por lo que se decide a eliminarlos de nuestro data_set, como resultado, se obtuvieron un total de 1,351 registros únicos.
 
-amazon_review
+Tabla: amazon_review
   * user_id - 144
   * user_name - 144
   * review_title - 144 originales (271 omitidos)
@@ -118,7 +118,7 @@ Duplicados desglosados
 
 3.- Valores fuera del alcance 
 
-amazon_product
+Tabla: amazon_product
   * about_product - 4 datos faltantes
   * discount_percentage - 315 porcentajes que no coinden con el discounted_price
   * actual_price - 0 precios correctos
@@ -127,10 +127,9 @@ amazon_product
   * product_id - 0
   * discounted_price - 0
 
->
->![alt text](image.png)
+Se llevó a cabo una verificación de la consistencia y coherencia de los precios y descuentos registrados en la tabla amazon_product, con el objetivo de identificar y corregir posibles errores en los datos antes de realizar análisis más profundos o tomar decisiones informadas. Esta validación garantiza que los precios y descuentos reflejen con precisión la realidad del producto, preservando la integridad y confiabilidad de los datos. Se encontraron 27 product_id, que presentan algún tipo de inconsistencia entre discounted_price, actual_price y discount_percentage.
 
-amazon_review
+Tabla: amazon_review
   * user_id - 0
   * user_name - 0
   * review_title - 0
@@ -144,9 +143,12 @@ amazon_review
 
 Se detectan variables con una cadena de valores dividida por comas o puntos en una misma varible ("user_id", "user_name","review_title", "review_id", "review_content"). 
 
-Se crearon tablas intermedias para desglosar columnas que contienen múltiples valores separados por comas o puntos en la tabla proyecto4datalab.amazon.cleaned_url_content_, permitiendo una manipulación y análisis más eficiente de los datos. Estos valores se combinaron luego en una consulta final.
+En el proceso de limpieza y transformación se dividió la categoría de los productos en varias columnas para facilitar su análisis. También se limpió la columna que describe los productos eliminando caracteres no deseados, como emojis, paréntesis y espacios innecesarios, asegurando que el texto quedara libre de ruido.
 
+Adicionalmente, se analizó la columna de identificadores de usuarios, contando cuántos ID estaban presentes en cada registro. Las reseñas también fueron limpiadas de signos, emojis y otros caracteres no alfabéticos, dejando solo el texto relevante para el análisis. Estas transformaciones permiten trabajar con un conjunto de datos más estructurado y limpio, adecuado para análisis posteriores y generación de insights. Concluyendo en una sola tabla que se llama datset.
 
+>
+>![alt text](Imagenes/ValoresFuera.png)
 
 ### 1.2 Análisis exploratorio
 
