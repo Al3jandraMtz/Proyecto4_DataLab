@@ -150,6 +150,17 @@ Adicionalmente, se analizó la columna de identificadores de usuarios, contando 
 >
 >![alt text](Imagenes/ValoresFuera.png)
 
+4.- Normalización de datos
+
+Derivado de la exploración se toma la decisión de normalizar los datos para evitar redundancias al eliminar los user_id y review_id excedentes.
+
+![alt text](image.png)
+
+### 1.2 Análisis de Sentimiento
+
+
+
+
 ### 1.2 Análisis exploratorio
 
 ### 1.3 Hipótesis
