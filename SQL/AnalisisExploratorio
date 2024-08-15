@@ -1,0 +1,6 @@
+#Distribucion de Productos
+SELECT category_1, category_2, category_3, category_4, COUNT(*) as product_count
+FROM p4-datalab.Data_Set.Data_Set
+GROUP BY category_1, category_2, category_3, category_4;
+
+#Top rating
