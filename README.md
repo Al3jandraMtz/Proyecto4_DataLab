@@ -171,7 +171,25 @@ Procesamiento:
 >
 >![alt text](Imagenes/ASentimiento.png)
 
-### 1.2 Análisis exploratorio
+### 1.3 Análisis exploratorio
+
+1.- Agrupación de las variables categoricas
+
+  * Visualización de la distribuición de los productos
+
+  >
+  > ![alt text](Imagenes/DistribucionProductos.png)
+
+  * Visualizacion de productos con Top Rating
+
+  >
+  > ![alt text](Imagenes/TopRating.png)
+
+  
+  *Visualizacion de medidas de tendencia central
+
+  >
+  >![alt text](Imagenes/MedidasTendencia.png)
 
 ### 1.3 Hipótesis
 
