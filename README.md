@@ -174,10 +174,22 @@ Derivado de la exploración se toma la decisión de normalizar los datos para ev
   > ![alt text](Imagenes/TopRating.png)
 
   
-  *Visualizacion de medidas de tendencia central
+  * Visualizacion de medidas de tendencia central
 
   >
   >![alt text](Imagenes/MedidasTendencia.png)
+
+  * Distribuición de las variables
+  
+  Raiting:
+  >
+  >![alt text](Imagenes/Distribuicion.png)
+
+    Interpretación: La mayoría de los usuarios parecen estar bastante satisfechos, ya que la mayoría de las calificaciones se sitúan en el rango de 4.0 a 4.5. Existen pocos usuarios que hayan dado calificaciones significativamente bajas (por debajo de 3.0).
+
+  * Cuartiles
+  >
+  >![alt text](Imagenes/Cuartiles.png)
 
   ### 1.2 Análisis de Sentimiento
 
