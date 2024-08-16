@@ -27,12 +27,14 @@ Datalab se ha establecido como un socio de confianza para una variedad de empres
 ### **Herramientas**
   1. Google BigQuery
   2. Google Colab
-  3. Google Looker Studio
+  3. Tableu
   4. Visual Studio
 
 ## **Procesamiento**
 
 ### 1.1 Limpieza de datos 
+
+Se normalizan los datos de la tabla amazon_review.
 
 Se realiza exploracion de los dos data set proporcionados:
 
@@ -157,20 +159,6 @@ Derivado de la exploración se toma la decisión de normalizar los datos para ev
 >
 >![alt text](Imagenes/Normalizacion.png)
 
-### 1.2 Análisis de Sentimiento
-
-El análisis de sentimiento, también conocido como minería de opinión, es una técnica de procesamiento de lenguaje natural (NLP) utilizada para identificar y extraer información subjetiva de un texto. Su objetivo principal es determinar la actitud, opinión o emoción de un autor respecto a un tema, producto o servicio en particular. El análisis de sentimiento clasifica el texto en categorías como positivo, negativo o neutral, y en algunos casos, puede identificar emociones más específicas como alegría, ira o tristeza.
-
-Procesamiento:
-* Tokenización: El texto se divide en unidades más pequeñas, como palabras o frases, que luego se analizan individualmente.
-
-* Asignación de Sentimiento: Cada palabra o frase se evalúa para determinar su "carga emocional". Esto se puede hacer utilizando lexicones de sentimiento (listas predefinidas de palabras con sus correspondientes valores de sentimiento) o modelos de machine learning entrenados en grandes conjuntos de datos etiquetados.
-
-* Cálculo del Sentimiento Global: El sentimiento global del texto se calcula combinando los valores de sentimiento individuales de cada palabra o frase. Esto puede ser un simple promedio o una suma ponderada dependiendo del enfoque.
-
->
->![alt text](Imagenes/ASentimiento.png)
-
 ### 1.3 Análisis exploratorio
 
 1.- Agrupación de las variables categoricas
@@ -190,6 +178,20 @@ Procesamiento:
 
   >
   >![alt text](Imagenes/MedidasTendencia.png)
+
+  ### 1.2 Análisis de Sentimiento
+
+El análisis de sentimiento, también conocido como minería de opinión, es una técnica de procesamiento de lenguaje natural (NLP) utilizada para identificar y extraer información subjetiva de un texto. Su objetivo principal es determinar la actitud, opinión o emoción de un autor respecto a un tema, producto o servicio en particular. El análisis de sentimiento clasifica el texto en categorías como positivo, negativo o neutral, y en algunos casos, puede identificar emociones más específicas como alegría, ira o tristeza.
+
+Procesamiento:
+* Tokenización: El texto se divide en unidades más pequeñas, como palabras o frases, que luego se analizan individualmente.
+
+* Asignación de Sentimiento: Cada palabra o frase se evalúa para determinar su "carga emocional". Esto se puede hacer utilizando lexicones de sentimiento (listas predefinidas de palabras con sus correspondientes valores de sentimiento) o modelos de machine learning entrenados en grandes conjuntos de datos etiquetados.
+
+* Cálculo del Sentimiento Global: El sentimiento global del texto se calcula combinando los valores de sentimiento individuales de cada palabra o frase. Esto puede ser un simple promedio o una suma ponderada dependiendo del enfoque.
+
+>
+>![alt text](Imagenes/ASentimiento.png)
 
 ### 1.3 Hipótesis
 
