@@ -287,6 +287,8 @@ discount_percentage:
 
 Correlación débil con todas las variables. El sentimiento (calculado probablemente a partir de texto) no parece estar fuertemente correlacionado con ninguna de las otras variables numéricas en tu conjunto de datos. Esto podría indicar que los sentimientos expresados en las reseñas no dependen directamente de los precios, descuentos o calificaciones ajustadas.
 
+***
+
 ### 1.3 Hipótesis
 
 ## Score de Riesgo
