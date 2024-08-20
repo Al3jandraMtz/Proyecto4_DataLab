@@ -209,7 +209,7 @@ Procesamiento:
 
 Identificación de palabras positivas o negativas
 >
->![alt text]( )
+>![alt text](Imagenes/PyN.png)
 
 Calculo del sentimiento mediante la asignacion de puntuaciones al sentimiento a cada texto.
 
