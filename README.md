@@ -183,7 +183,7 @@ Derivado de la exploración se toma la decisión de normalizar los datos para ev
   
   Raiting:
   >
-  >![alt text](Imagenes/Distribuicion.png)
+  >![alt text](Imagenes/DRaiting.png)
 
     Interpretación: La mayoría de los usuarios parecen estar bastante satisfechos, ya que la mayoría de las calificaciones se sitúan en el rango de 4.0 a 4.5. Existen pocos usuarios que hayan dado calificaciones significativamente bajas (por debajo de 3.0).
 
@@ -202,8 +202,90 @@ Procesamiento:
 
 * Cálculo del Sentimiento Global: El sentimiento global del texto se calcula combinando los valores de sentimiento individuales de cada palabra o frase. Esto puede ser un simple promedio o una suma ponderada dependiendo del enfoque.
 
+Identificación de palabras positivas o negativas
 >
 >![alt text](Imagenes/ASentimiento.png)
+
+Calculo del sentimiento mediante la asignacion de puntuaciones al sentimiento a cada texto.
+
+>
+>![alt text](Imagenes/PSentimiento.png)
+
+Fila 0:
+
+Tokens: ['this', 'is', 'aesthetically', 'the', 'most', 'appealing', ...]
+Sentimiento: 0.135799
+Interpretación: Este valor de sentimiento (0.135799) sugiere que el texto tiene un sentimiento ligeramente positivo. Es probable que las palabras en el texto estén expresando una opinión algo favorable, aunque no es un sentimiento muy fuerte.
+
+Fila 1:
+
+Tokens: ['as', 'of', 'now', 'its', 'working', 'fin', 'but', 'dont', ...]
+Sentimiento: 0.177407
+Interpretación: Este valor de sentimiento (0.177407) indica un sentimiento positivo, un poco más fuerte que el de la fila anterior. El texto podría estar reflejando una experiencia generalmente buena, pero con algunas dudas o críticas leves.
+
+Fila 2:
+
+Tokens: ['st', 'product', 'cam', 'faulty', 'got', 'it', 'replac', ...]
+Sentimiento: 0.268550
+Interpretación: Este valor de sentimiento (0.268550) es más positivo, lo que sugiere que el texto en general transmite una opinión bastante favorable, aunque podría incluir menciones a aspectos negativos, como problemas iniciales que fueron resueltos.
+
+Fila 3:
+
+Tokens: ['torn', 'packingdknh', 'product', 'used', 'lg', 'rha', ...]
+Sentimiento: 0.423984
+Interpretación: Este es el sentimiento más positivo hasta ahora (0.423984), lo que indica una fuerte satisfacción con el producto o servicio descrito. Las palabras probablemente reflejan una experiencia muy positiva.
+
+Fila 4:
+
+Tokens: ['goodi', 'use', 'this', 'to', 'solv', 'my', 'numericals', ...]
+Sentimiento: 0.377778
+Interpretación: Este valor de sentimiento (0.377778) también es bastante positivo, sugiriendo que el texto expresa una alta satisfacción o un resultado favorable al usar el producto o servicio.
+
+Distribución de los sentimientos
+
+>
+>![alt text](Imagenes/DSentimientos.png)
+
+Promedio de sentimientos por categoria
+
+>
+>![alt text](Imagenes/PromSentimientos.png)
+
+Interpretación: 
+
+* Toys & Games: Tiene el promedio de sentimiento más alto, superior a 0.4. Esto sugiere que los productos en esta categoría generan una respuesta muy positiva en los usuarios.
+
+* Home & Kitchen y Home Improvement: Ambas categorías también muestran un promedio de sentimiento alto, cercano a 0.4. Esto indica que los productos para el hogar son bien recibidos por los consumidores, con reseñas generalmente positivas.
+
+* Office Products y Electronics: Estas categorías tienen un promedio de sentimiento moderado, alrededor de 0.3, lo que indica una percepción positiva, pero no tan fuerte como en las categorías mencionadas anteriormente.
+
+* Computers & Accessories y Cars & Motorbike: Estas categorías tienen un promedio de sentimiento ligeramente inferior, cerca de 0.25, lo que sugiere una percepción favorable, aunque menos entusiasta que otras categorías.
+
+* Musical Instruments y Health & Personal Care: Estas categorías tienen los promedios de sentimiento más bajos, siendo "Health & Personal Care" la que tiene el promedio más bajo, cercano a 0.15. Esto sugiere que las reseñas en estas categorías son menos positivas en comparación con las demás, lo que podría indicar problemas o insatisfacción con ciertos productos.
+
+### 1.3 Correlación entre variables
+
+>
+>![alt text](Imagenes/Correlacion.png)
+
+**discounted_price y actual_price:**
+
+* Correlación: 0.97 Hay una correlación positiva muy fuerte entre el precio descontado y el precio original. Esto es esperado, ya que el precio descontado suele ser una función directa del precio original menos algún descuento.
+discount_percentage:
+
+* Correlación negativa con discounted_price (-0.33) y actual_price (-0.20). Un mayor porcentaje de descuento tiende a estar asociado con precios originales y descontados más bajos, aunque la correlación no es extremadamente fuerte.
+
+**user_id_count y rating_count**:
+
+* Correlación muy baja entre sí y con otras variables, sugiriendo que el número de usuarios que realizan reseñas y la cantidad total de reseñas no están fuertemente relacionados con los precios o los descuentos.
+
+**adjusted_rating:**
+
+* Correlación moderadamente positiva con discounted_price (0.16) y actual_price (0.15). Las calificaciones ajustadas tienen una ligera correlación positiva con los precios, sugiriendo que productos más caros tienden a recibir mejores calificaciones, aunque esta correlación es relativamente baja.
+
+**sentiment:**
+
+Correlación débil con todas las variables. El sentimiento (calculado probablemente a partir de texto) no parece estar fuertemente correlacionado con ninguna de las otras variables numéricas en tu conjunto de datos. Esto podría indicar que los sentimientos expresados en las reseñas no dependen directamente de los precios, descuentos o calificaciones ajustadas.
 
 ### 1.3 Hipótesis
 
