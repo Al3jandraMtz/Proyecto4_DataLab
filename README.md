@@ -286,7 +286,7 @@ discount_percentage:
 
 **sentiment:**
 
-Correlación débil con todas las variables. El sentimiento (calculado probablemente a partir de texto) no parece estar fuertemente correlacionado con ninguna de las otras variables numéricas en tu conjunto de datos. Esto podría indicar que los sentimientos expresados en las reseñas no dependen directamente de los precios, descuentos o calificaciones ajustadas.
+* Correlación débil con todas las variables. El sentimiento (calculado a partir de texto) no parece estar fuertemente correlacionado con ninguna de las otras variables numéricas en tu conjunto de datos. Esto podría indicar que los sentimientos expresados en las reseñas no dependen directamente de los precios, descuentos o calificaciones ajustadas.
 
 ***
 
