@@ -209,7 +209,7 @@ Procesamiento:
 
 Identificación de palabras positivas o negativas
 >
->![alt text](Imagenes/ASentimiento.png)
+>![alt text]( )
 
 Calculo del sentimiento mediante la asignacion de puntuaciones al sentimiento a cada texto.
 
@@ -334,6 +334,12 @@ Correlaciones Positivas:
 
 El concepto de que "los productos con mayores descuentos suelen tener calificaciones promedio más bajas debido a la percepción de menor calidad" se confirma en  cierta parte, pero no se aplica de manera universal a todas las categorías de productos. En algunas categorías, esta relación es válida, mientras que en otras, la correlación es positiva, indicando que los descuentos pueden ser vistos de manera favorable.
 
+
+### 2.- Hipótesis sobre la Gestión de la Reputación y Reseñas Negativas:
+
+ "Un mayor número de reseñas negativas está asociado con una menor calificación promedio de los productos."
+
+ 
 
 
 
