@@ -187,6 +187,11 @@ Derivado de la exploración se toma la decisión de normalizar los datos para ev
 
     Interpretación: La mayoría de los usuarios parecen estar bastante satisfechos, ya que la mayoría de las calificaciones se sitúan en el rango de 4.0 a 4.5. Existen pocos usuarios que hayan dado calificaciones significativamente bajas (por debajo de 3.0).
 
+  Categorias:
+
+  >
+  >![alt text](Imagenes/Categorias.png)
+
   * Cuartiles
   >
   >![alt text](Imagenes/Cuartiles.png)
@@ -291,6 +296,33 @@ discount_percentage:
 ***
 
 ### 1.3 Hipótesis
+
+1. Hipótesis sobre la Correlación entre Descuentos y Calificaciones:  "Los productos con mayores descuentos tienden a tener calificaciones promedio más bajas debido a la percepción de menor calidad."
+
+>
+>![alt text](Imagenes/DispersionH1.png)
+
+ *Correlación general 0.97*
+
+* Calificaciones Altas (4.0 - 4.75): En este rango de calificaciones, hay una concentración de productos con una gran variedad de descuentos, lo que sugiere que algunos productos con buenos descuentos pueden mantener calificaciones altas.
+* Calificaciones Medias (3.0 - 4.0): La dispersión es más amplia en este rango, con una mezcla de calificaciones para diferentes porcentajes de descuento.
+* Calificaciones Bajas (2.75 - 3.5): La línea de tendencia muestra que en este rango, el porcentaje de descuento es ligeramente más alto, lo que apoya la hipótesis.
+
+*Correlación por categoria*
+
+>
+>![alt text](image-1.png))
+
+Correlaciones Negativas:
+
+* La categoría Home&Kitchen muestra una fuerte correlación negativa (-0.7759), lo que sugiere que en esta categoría, los productos con mayores descuentos tienden a tener calificaciones más bajas.
+* Computers&Accessories y Electronics también muestran correlaciones negativas más débiles, pero aún indican una tendencia donde mayores descuentos pueden estar asociados con calificaciones más bajas.
+
+Correlaciones Positivas:
+
+* Las categorías HomeImprovement y MusicalInstruments tienen correlaciones positivas perfectas (1.0), lo que indica que en estos casos, los productos con mayores descuentos tienden a tener calificaciones más altas. Esto podría ser un indicio de que en estas categorías, el descuento es percibido positivamente por los consumidores.
+
+
 
 ## Score de Riesgo
 ## **Regresión Logística**
