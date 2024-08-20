@@ -213,31 +213,31 @@ Calculo del sentimiento mediante la asignacion de puntuaciones al sentimiento a 
 
 Fila 0:
 
-Tokens: ['this', 'is', 'aesthetically', 'the', 'most', 'appealing', ...]
+* Tokens: ['this', 'is', 'aesthetically', 'the', 'most', 'appealing', ...]
 Sentimiento: 0.135799
 Interpretación: Este valor de sentimiento (0.135799) sugiere que el texto tiene un sentimiento ligeramente positivo. Es probable que las palabras en el texto estén expresando una opinión algo favorable, aunque no es un sentimiento muy fuerte.
 
 Fila 1:
 
-Tokens: ['as', 'of', 'now', 'its', 'working', 'fin', 'but', 'dont', ...]
+* Tokens: ['as', 'of', 'now', 'its', 'working', 'fin', 'but', 'dont', ...]
 Sentimiento: 0.177407
 Interpretación: Este valor de sentimiento (0.177407) indica un sentimiento positivo, un poco más fuerte que el de la fila anterior. El texto podría estar reflejando una experiencia generalmente buena, pero con algunas dudas o críticas leves.
 
 Fila 2:
 
-Tokens: ['st', 'product', 'cam', 'faulty', 'got', 'it', 'replac', ...]
+* Tokens: ['st', 'product', 'cam', 'faulty', 'got', 'it', 'replac', ...]
 Sentimiento: 0.268550
 Interpretación: Este valor de sentimiento (0.268550) es más positivo, lo que sugiere que el texto en general transmite una opinión bastante favorable, aunque podría incluir menciones a aspectos negativos, como problemas iniciales que fueron resueltos.
 
 Fila 3:
 
-Tokens: ['torn', 'packingdknh', 'product', 'used', 'lg', 'rha', ...]
+* Tokens: ['torn', 'packingdknh', 'product', 'used', 'lg', 'rha', ...]
 Sentimiento: 0.423984
 Interpretación: Este es el sentimiento más positivo hasta ahora (0.423984), lo que indica una fuerte satisfacción con el producto o servicio descrito. Las palabras probablemente reflejan una experiencia muy positiva.
 
 Fila 4:
 
-Tokens: ['goodi', 'use', 'this', 'to', 'solv', 'my', 'numericals', ...]
+* Tokens: ['goodi', 'use', 'this', 'to', 'solv', 'my', 'numericals', ...]
 Sentimiento: 0.377778
 Interpretación: Este valor de sentimiento (0.377778) también es bastante positivo, sugiriendo que el texto expresa una alta satisfacción o un resultado favorable al usar el producto o servicio.
 
@@ -245,6 +245,7 @@ Distribución de los sentimientos
 
 >
 >![alt text](Imagenes/DSentimientos.png)
+
 
 Promedio de sentimientos por categoria
 
