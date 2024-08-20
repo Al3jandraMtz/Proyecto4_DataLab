@@ -297,10 +297,17 @@ discount_percentage:
 
 ### 1.3 Hipótesis
 
-1. Hipótesis sobre la Correlación entre Descuentos y Calificaciones:  "Los productos con mayores descuentos tienden a tener calificaciones promedio más bajas debido a la percepción de menor calidad."
+### 1.- Hipótesis sobre la Correlación entre Descuentos y Calificaciones:  
+"Los productos con mayores descuentos tienden a tener calificaciones promedio más bajas debido a la percepción de menor calidad."
 
+>>>![alt text](GD.H1-1.png)
+>![alt text](GD.H1.png)
+
+
+**Correlación**
 >
 >![alt text](Imagenes/DispersionH1.png)
+
 
  *Correlación general 0.97*
 
@@ -321,6 +328,13 @@ Correlaciones Negativas:
 Correlaciones Positivas:
 
 * Las categorías HomeImprovement y MusicalInstruments tienen correlaciones positivas perfectas (1.0), lo que indica que en estos casos, los productos con mayores descuentos tienden a tener calificaciones más altas. Esto podría ser un indicio de que en estas categorías, el descuento es percibido positivamente por los consumidores.
+
+**Conclusiones**
+
+
+El concepto de que "los productos con mayores descuentos suelen tener calificaciones promedio más bajas debido a la percepción de menor calidad" se confirma en  cierta parte, pero no se aplica de manera universal a todas las categorías de productos. En algunas categorías, esta relación es válida, mientras que en otras, la correlación es positiva, indicando que los descuentos pueden ser vistos de manera favorable.
+
+
 
 
 
