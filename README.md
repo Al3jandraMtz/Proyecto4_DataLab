@@ -317,6 +317,20 @@ Correlación débil con todas las variables. El sentimiento no muestra una corre
 ### 1.- Hipótesis sobre la Correlación entre Descuentos y Calificaciones:  
 "Los productos con mayores descuentos tienden a tener calificaciones promedio más bajas debido a la percepción de menor calidad."
 
+Aquí tienes una versión parafraseada y más corta del texto:
+
+**Metodología:**
+
+1. **Asignación de Variables Clave:**
+    * **Discount Percentage:** Representa el nivel de descuento aplicado a cada producto.
+    * **Adjusted Rating:** Calificación promedio ajustada según las reseñas de los consumidores.
+
+2. **Cálculo y análisis de Correlaciones:**
+    * **General:** Se calculó la correlación entre el porcentaje de descuento y la calificación para diferentes categorías de productos, indicando la relación lineal entre descuentos y calificaciones promedio.
+    * **Por categoría:** Se calculó la correlación de porcentaje de descuento y calificación para las categorías más solicitadas del análisis.
+
+
+
 >>>![alt text](Imagenes/GD.H1-1.png)
 >![alt text](Imagenes/GD.H1.png)
 
@@ -359,21 +373,44 @@ El concepto de que "los productos con mayores descuentos suelen tener calificaci
 
  "Un mayor número de reseñas negativas está asociado con una menor calificación promedio de los productos."
 
+Metodología:
+  
+1. Utilizamos la calificación promedio ajustada de los productos como la variable dependiente.
+2. Definimos las reseñas negativas en función del análisis de sentimiento, considerando como negativas aquellas reseñas cuyo puntaje de sentimiento era menor o igual a 0.
+3. Los productos fueron segmentados por categorías (category_1, category_2, category_3, y category_4) para analizar la relación dentro de cada categoría.
+4. Se calculó la correlación de Pearson entre el número de reseñas negativas y la calificación promedio dentro de cada categoría de productos.
+5. Significancia Estadística: Se utilizó el valor p para determinar la significancia estadística de las correlaciones. Un valor p menor a 0.05 indicaría que la correlación es significativa.
+
 >
 >![alt text](image.png)
 
+**Interpretación:**
 
+  * **Distribución de Datos:**
+  La mayoría de los productos tienen pocas o ninguna reseña negativa, concentrándose en la parte superior izquierda de la gráfica, lo que indica altas calificaciones promedio.
+
+  * **Correlación Observada:**
+  Aunque algunos productos tienen reseñas negativas, esto no afecta significativamente la calificación promedio. La correlación de Pearson (-0.0819) muestra una leve tendencia negativa, pero no fuerte.
+
+  * **Significado del Valor p:**
+  El valor p (0.0025) indica que la correlación, aunque débil, es estadísticamente significativa, sugiriendo que la relación observada no es por azar.
+
+  * **Productos Específicos:**
+  Algunos productos, como B00K32PEW4, tienen calificaciones altas a pesar de algunas reseñas negativas, indicando que unas pocas reseñas negativas no afectan mucho si hay suficientes reseñas positivas.
  
-Metodología:
-  
-  * Calcular total de reseñas positivas y negativas.
-  * Correlación de Pearson entre variables.
 
-  Conclusiones:
+
+  **Conclusiones:**
 
   El análisis realizado no encontró correlaciones negativas significativas entre el número de reseñas negativas y la calificación promedio de los productos en ninguna de las categorías analizadas. Esto sugiere que, aunque existen relaciones negativas en algunas categorías, estas no son lo suficientemente fuertes como para ser consideradas estadísticamente significativas. Este resultado indica que otros factores podrían estar influyendo en las calificaciones de los productos, más allá del simple conteo de reseñas negativas.
 
+### 3. Hipótesis sobre Tendencias del Mercado:
 
+"Los cambios en las palabras clave más mencionadas en reseñas positivas indican nuevas tendencias en las preferencias del consumidor."
+
+Metodología:
+
+1. Se realizo un análisis de frecuencia de palabras en un período tiempo, sin embargo al no haber una variable de tiempo como tal, se realizo una simulación de 4 períodos, los cuales se definieron mediante cuartiles.
 
 
 ## Score de Riesgo
