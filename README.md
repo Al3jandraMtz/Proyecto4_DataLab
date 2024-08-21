@@ -282,7 +282,7 @@ Interpretación:
 ### 1.3 Correlación entre variables
 
 >
->![alt text](c:\Users\aleja\OneDrive\Imágenes\Capturas de pantalla\Captura de pantalla 2024-08-20 173138.png)
+>!![Captura de pantalla 2024-08-20 173138](https://github.com/user-attachments/assets/a90ffc16-11fb-4dad-bc06-93c1e2634c5b)
 
 **actual_price y discount_percentage:**
 
