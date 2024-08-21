@@ -282,7 +282,7 @@ Interpretación:
 ### 1.3 Correlación entre variables
 
 >
->!![Captura de pantalla 2024-08-20 173138](https://github.com/user-attachments/assets/a90ffc16-11fb-4dad-bc06-93c1e2634c5b)
+>![alt text](c:\Users\aleja\OneDrive\Imágenes\Capturas de pantalla\Captura de pantalla 2024-08-20 173138.png)
 
 **actual_price y discount_percentage:**
 
@@ -359,11 +359,19 @@ El concepto de que "los productos con mayores descuentos suelen tener calificaci
 
  "Un mayor número de reseñas negativas está asociado con una menor calificación promedio de los productos."
 
+>
+>![alt text](image.png)
+
+
  
 Metodología:
   
   * Calcular total de reseñas positivas y negativas.
   * Correlación de Pearson entre variables.
+
+  Conclusiones:
+
+  El análisis realizado no encontró correlaciones negativas significativas entre el número de reseñas negativas y la calificación promedio de los productos en ninguna de las categorías analizadas. Esto sugiere que, aunque existen relaciones negativas en algunas categorías, estas no son lo suficientemente fuertes como para ser consideradas estadísticamente significativas. Este resultado indica que otros factores podrían estar influyendo en las calificaciones de los productos, más allá del simple conteo de reseñas negativas.
 
 
 
