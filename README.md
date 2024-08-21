@@ -282,7 +282,7 @@ Interpretación:
 ### 1.3 Correlación entre variables
 
 >
->![alt text](Imagenes/Correlacion.png)
+>![alt text](c:\Users\aleja\OneDrive\Imágenes\Capturas de pantalla\Captura de pantalla 2024-08-20 173138.png)
 
 **actual_price y discount_percentage:**
 
@@ -294,7 +294,7 @@ Correlación: -0.17 Existe una correlación negativa débil entre el precio actu
 
 **discount_percentage y adjusted_rating:**
 
-Correlación: -0.16 Existe una correlación negativa débil entre el porcentaje de descuento y la calificación ajustada. Esto sugiere que mayores descuentos podrían estar ligeramente asociados con calificaciones más bajas, aunque la correlación no es significativa.
+Correlación: -0.16 Existe una correlación negativa débil entre el porcentaje de descuento y la calificación. Esto sugiere que mayores descuentos podrían estar ligeramente asociados con calificaciones más bajas, aunque la correlación no es significativa.
 
 **user_id_count y rating_count:**
 
@@ -326,7 +326,7 @@ Correlación débil con todas las variables. El sentimiento no muestra una corre
 >![alt text](Imagenes/DispersionH1.png)
 
 
- *Correlación general 0.97*
+ *Correlación general -0.17*
 
 * Calificaciones Altas (4.0 - 4.75): En este rango de calificaciones, hay una concentración de productos con una gran variedad de descuentos, lo que sugiere que algunos productos con buenos descuentos pueden mantener calificaciones altas.
 * Calificaciones Medias (3.0 - 4.0): La dispersión es más amplia en este rango, con una mezcla de calificaciones para diferentes porcentajes de descuento.
@@ -335,16 +335,19 @@ Correlación débil con todas las variables. El sentimiento no muestra una corre
 *Correlación por categoria*
 
 >
->![alt text](image-1.png))
+>![alt text](Imagenes/Corr.png)
 
 Correlaciones Negativas:
 
-* La categoría Home&Kitchen muestra una fuerte correlación negativa (-0.7759), lo que sugiere que en esta categoría, los productos con mayores descuentos tienden a tener calificaciones más bajas.
-* Computers&Accessories y Electronics también muestran correlaciones negativas más débiles, pero aún indican una tendencia donde mayores descuentos pueden estar asociados con calificaciones más bajas.
+* Home&Kitchen (-0.2374): Esta correlación negativa moderada sugiere que en la categoría Home&Kitchen, los productos con mayores descuentos tienden a tener calificaciones promedio más bajas. Esto respalda la hipótesis, ya que los consumidores podrían percibir que los productos con mayores descuentos en esta categoría son de menor calidad, lo que se refleja en calificaciones más bajas.
+
+* Electronics (-0.1923): Indica que los productos con mayores descuentos podrían estar siendo percibidos como de menor calidad, lo que lleva a calificaciones más bajas.
+
+* OfficeProducts (-0.1351) y Computers&Accessories (-0.1015): Estas categorías muestran correlaciones negativas más débiles, lo que sugiere que aunque la tendencia existe, es menos pronunciada. Los descuentos en estas categorías pueden tener un impacto menor en la percepción de calidad, pero aún se observa una ligera tendencia a que mayores descuentos se asocien con calificaciones más bajas.
 
 Correlaciones Positivas:
 
-* Las categorías HomeImprovement y MusicalInstruments tienen correlaciones positivas perfectas (1.0), lo que indica que en estos casos, los productos con mayores descuentos tienden a tener calificaciones más altas. Esto podría ser un indicio de que en estas categorías, el descuento es percibido positivamente por los consumidores.
+* HomeImprovement (1.0) y MusicalInstruments (1.0): Estas correlaciones perfectas sugieren lo contrario a la hipótesis en estas categorías. Aquí, los productos con mayores descuentos parecen recibir calificaciones promedio más altas. Esto podría deberse a que los consumidores perciben los descuentos en estas categorías como una excelente relación calidad-precio, en lugar de una indicación de baja calidad. Es posible que en estas categorías específicas, los descuentos sean interpretados positivamente, lo que refuerza la percepción de valor en lugar de la percepción de menor calidad.
 
 **Conclusiones**
 
@@ -357,6 +360,10 @@ El concepto de que "los productos con mayores descuentos suelen tener calificaci
  "Un mayor número de reseñas negativas está asociado con una menor calificación promedio de los productos."
 
  
+Metodología:
+  
+  * Calcular total de reseñas positivas y negativas.
+  * Correlación de Pearson entre variables.
 
 
 
