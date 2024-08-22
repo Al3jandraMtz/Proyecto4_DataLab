@@ -469,10 +469,45 @@ Estos resultados indican que las palabras clave más comunes en las reseñas pos
 ### 5. Hipótesis sobre la Predicción del Comportamiento del Consumidor:
 
 "El análisis de sentimientos en las reseñas puede predecir con precisión la tendencia general de la satisfacción del cliente, indicando si es probable que aumente o disminuya en el futuro"
-sss
+
+Metodología:
+
+1. Se realizo el calculo promedio de sentimiento y calificación.
+2. Se calcula la correlación entre variables
+
+
+>
+>![alt text](Imagenes/SentimientoVSCalificacion.png)
+
+
+Interpretación:
+
+La mayoría de los datos están concentrados alrededor de puntuaciones de sentimiento (entre -0.2 y 0.4) y calificaciones promedio que oscilan entre 3.5 y 4.5.
+
+* Calificaciones Altas: Los productos con calificaciones promedio de 4.5 y 5.0 parecen tener puntuaciones de sentimiento moderadas, lo que sugiere que un sentimiento positivo no es necesariamente el único factor que impulsa las calificaciones altas.
+* Sentimiento Negativo: Algunas calificaciones de productos caen en el rango de sentimientos negativos (por debajo de 0), lo que es consistente con calificaciones promedio más bajas.
+
+**Conclusiones:**
+
+ La correlación de 0.16 entre las variables, sugiere aunque existe una relación positiva entre el sentimiento y la calificación, esta relación es débil. 
+ A pesar de que existe una ligera tendencia entre la satisfacción del cliente y la calificiones más altas, la hipótesis no puede ser del todo respaldada.
+
 ### 6 . Hipótesis sobre las Calificaciones Promedio por Categoría de Producto
 
 "Las categorías de productos que tienen una mayor calificación promedio también tienen una mayor satisfacción del cliente."
+
+**Metodología:**
+1. Agrupación de variables.
+2. Calcular la calificación promedio de cada variable.
+
+>
+>![alt text](10.png)
+
+**Interpretación:** Una correlación de 0.85 indica una fuerte relación positiva entre la calificación promedio y la satisfacción promedio.
+
+**Conclusión:**
+
+La hipótesis 6 está respaldada por los datos. Existe una relación fuerte entre las calificaciones promedio y la satisfacción promedio por categoría de producto, lo que indica que las categorías con mayores calificaciones promedio también tienen mayor satisfacción del cliente.
 
 ## Score de Riesgo
 ## **Regresión Logística**
