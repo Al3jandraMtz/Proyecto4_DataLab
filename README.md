@@ -404,13 +404,37 @@ Metodología:
 
   El análisis realizado no encontró correlaciones negativas significativas entre el número de reseñas negativas y la calificación promedio de los productos en ninguna de las categorías analizadas. Esto sugiere que, aunque existen relaciones negativas en algunas categorías, estas no son lo suficientemente fuertes como para ser consideradas estadísticamente significativas. Este resultado indica que otros factores podrían estar influyendo en las calificaciones de los productos, más allá del simple conteo de reseñas negativas.
 
-### 3. Hipótesis sobre la Gestión de la Reputación y Reseñas positivas:
+### 3. Hipótesis sobre la Calificación Promedio y el Número de Seseñas
 
-"Un mayor número de reseñas positivas está asociado con una mayor calificación promedio de los productos."
+"Un mayor número de reseñas está asociado con una mayor calificación promedio de los productos."
 
 Metodología:
 
-1. Se realizo la segmentación de las calificaciones <4 , para identificar las palabras positivas y la frecuencia de estás en cada reseña, con la finalidad de mapear las caracteristicas clave de los productos.
+1. Se calcula la correlación entre variables
+2. Se filtro la cantidad de reseñas.
+
+>
+>![alt text](Imagenes/H3.png)
+
+
+**Interpretación:**
+
+* El coeficiente de correlación es 0.099, indica una relación positiva muy débil entre el número de reseñas y la calificación promedio.
+* El valor p es extremadamente bajo (0.000315), lo que nos dice que la correlación observada no es una coincidencia. Aunque la relación entre las variables es débil, la baja probabilidad de que ocurra por azar confirma que es significativa desde el punto de vista estadístico.
+
+**Conclusiones**
+
+La Hipótesis es Parcialmente Válida: Aunque existe una correlación estadísticamente significativa entre el número de reseñas y la calificación promedio, la fuerza de esta relación es extremadamente débil (correlación de 0.099). Esto sugiere que el número de reseñas por sí solo no es un predictor fuerte de una calificación promedio más alta ni de una calificación promedio.
+
+### 4. Hipótesis sobre Palabras Clave en Reseñas de Productos Altamente Calificados:
+
+ "Las palabras clave más comunes en las reseñas positivas están asociadas con características específicas del producto, como la facilidad de uso o el rendimiento.”
+
+ Metodología:
+ 
+ 1. Segmentación de palabras positivas.
+ 2. Mapeo de caracteristicas clave del producto.
+
 
 >
 >![alt text](Imagenes/Mapeo.png)
@@ -418,6 +442,37 @@ Metodología:
 >
 >![alt text](Imagenes/Mapeo2.png)
 
+
+
+**Interpretación:**
+1. Calidad:
+
+    - Frecuencia: La característica "calidad" fue mencionada en 719 reseñas positivas, lo que representa el 71.19% de todas las reseñas positivas.Lo que sugiere que la percepción de alta calidad es una característica muy importante y común entre los productos que reciben calificaciones altas. La "calidad" parece ser un factor clave para los clientes satisfechos.
+
+2. Facilidad de Uso:
+
+    - Frecuencia: La "facilidad de uso" fue mencionada en 437 reseñas positivas, representando el 43.27%. La facilidad de uso es también una característica importante, aunque menos mencionada que la calidad. Esto podría indicar que, mientras los productos fáciles de usar son valorados positivamente, la calidad aún es un factor más dominante.
+
+3. Rendimiento:
+
+    - Frecuencia: El "rendimiento" se mencionó en 409 reseñas positivas, lo que equivale al 40.50%. El rendimiento es crucial para un gran número de usuarios. Es un factor importante, pero no tanto como la calidad o la facilidad de uso.
+
+4. Durabilidad:
+
+    - Frecuencia: La "durabilidad" fue mencionada en 213 reseñas, representando el 21.09%. La durabilidad es la menos mencionada entre las características, lo que podría sugerir que no es un factor tan determinante para los productos altamente calificados, o bien que los clientes no encuentran problemas con la durabilidad en la mayoría de los productos bien valorados.
+
+
+**Conclusiónes:**
+
+Estos resultados indican que las palabras clave más comunes en las reseñas positivas están, efectivamente, asociadas con características específicas del producto. En particular, la calidad es la característica más prevalente, seguida por la facilidad de uso y el rendimiento. La durabilidad, aunque importante, es mencionada con menos frecuencia.
+
+### 5. Hipótesis sobre la Predicción del Comportamiento del Consumidor:
+
+"El análisis de sentimientos en las reseñas puede predecir con precisión la tendencia general de la satisfacción del cliente, indicando si es probable que aumente o disminuya en el futuro"
+
+### 6 . Hipótesis sobre las Calificaciones Promedio por Categoría de Producto
+
+"Las categorías de productos que tienen una mayor calificación promedio también tienen una mayor satisfacción del cliente."
 
 ## Score de Riesgo
 ## **Regresión Logística**
