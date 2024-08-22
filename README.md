@@ -469,7 +469,7 @@ Estos resultados indican que las palabras clave más comunes en las reseñas pos
 ### 5. Hipótesis sobre la Predicción del Comportamiento del Consumidor:
 
 "El análisis de sentimientos en las reseñas puede predecir con precisión la tendencia general de la satisfacción del cliente, indicando si es probable que aumente o disminuya en el futuro"
-
+sss
 ### 6 . Hipótesis sobre las Calificaciones Promedio por Categoría de Producto
 
 "Las categorías de productos que tienen una mayor calificación promedio también tienen una mayor satisfacción del cliente."
