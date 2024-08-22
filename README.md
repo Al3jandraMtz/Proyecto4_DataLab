@@ -404,13 +404,19 @@ Metodología:
 
   El análisis realizado no encontró correlaciones negativas significativas entre el número de reseñas negativas y la calificación promedio de los productos en ninguna de las categorías analizadas. Esto sugiere que, aunque existen relaciones negativas en algunas categorías, estas no son lo suficientemente fuertes como para ser consideradas estadísticamente significativas. Este resultado indica que otros factores podrían estar influyendo en las calificaciones de los productos, más allá del simple conteo de reseñas negativas.
 
-### 3. Hipótesis sobre Tendencias del Mercado:
+### 3. Hipótesis sobre la Gestión de la Reputación y Reseñas positivas:
 
-"Los cambios en las palabras clave más mencionadas en reseñas positivas indican nuevas tendencias en las preferencias del consumidor."
+"Un mayor número de reseñas positivas está asociado con una mayor calificación promedio de los productos."
 
 Metodología:
 
-1. Se realizo un análisis de frecuencia de palabras en un período tiempo, sin embargo al no haber una variable de tiempo como tal, se realizo una simulación de 4 períodos, los cuales se definieron mediante cuartiles.
+1. Se realizo la segmentación de las calificaciones <4 , para identificar las palabras positivas y la frecuencia de estás en cada reseña, con la finalidad de mapear las caracteristicas clave de los productos.
+
+>
+>![alt text](Imagenes/Mapeo.png)
+
+>
+>![alt text](Imagenes/Mapeo2.png)
 
 
 ## Score de Riesgo
