@@ -560,23 +560,36 @@ Hipótesis:
 >![alt text](Imagenes/chi2.png)
 
 Interpretación:
-* False: Cantidad de reseñas negativas en la categoría.
-* True: Cantidad de reseñas positivas en la categoría.
+* Frecuencias obesrvadas:
+   * False: Cantidad de reseñas negativas en la categoría.
+  * True: Cantidad de reseñas positivas en la categoría.
 * Chi-cuadrado: (39.29%) La magnitid de la diferencia en las frecuencias observadas.
 * p-value: (0.00) Sugiere que hay una relación significativa entre la categoría del producto y la probabilidad de recibir una relación alta.
 * Grados de libertad: Total de categorías menos 1.
 *Frecuencias esperadas: Muestran cómo se distribuirían las calificaciones si no hubiera ninguna relación entre las categorías de producto y las calificaciones altas. 
-    * Car&Mobile: Los resultados nos muestran que esta categoría esperaria tener 2.52 reseñas negativas y solo tiene una. Y 7.47 reseñas positivas, y solo tiene 0.
-    * Computers&Accesories: 
 
-Resultados:
+Tus anotaciones están bastante bien encaminadas, pero aquí te las presento corregidas y organizadas para mayor claridad:
 
-Chi-cuadrado: Mide la magnitud de la diferencia entre las frecuencias observadas y esperadas.
-p-value: Si el valor p es menor que un umbral (generalmente 0.05), se rechaza la hipótesis nula, sugiriendo que existe una relación significativa.
-Grados de libertad: Depende del número de categorías en ambas variables.
-Interpretación de Resultados:
-p-value < 0.05: Rechazas la hipótesis nula y concluyes que hay una relación significativa entre la categoría de producto y la probabilidad de obtener una calificación alta.
-p-value >= 0.05: No se rechaza la hipótesis nula, lo que sugiere que no hay evidencia suficiente para afirmar que las dos variables están relacionadas.
+Análisis de Categorías de Producto y Satisfacción del Cliente
+
+1. Car&Motorbike:
+
+* Reseñas Negativas: Se esperaban aproximadamente 2.52 reseñas negativas, pero solo se observó 1 reseña negativa.
+* Reseñas Positivas: Se esperaban alrededor de 7.47 reseñas positivas, pero no se observó ninguna (0).
+Interpretación: Estos resultados sugieren que la categoría "Car&Motorbike" no está cumpliendo con las expectativas de satisfacción del cliente, ya que, aunque el número de reseñas negativas es menor de lo esperado, la falta total de reseñas positivas indica una clara deficiencia en la satisfacción del cliente en esta categoría.
+2. Computers&Accessories:
+
+* Reseñas Negativas: Se esperaban aproximadamente 9.46 reseñas negativas, pero se observaron 66.
+* Reseñas Positivas: Se esperaban alrededor de 2.80 reseñas positivas, pero se observaron 309.
+
+>
+>![alt text](Imagenes/Chi.png)
+
+Interpretación:
+
+La categoría “Computers&Accessories” está recibiendo muchas más reseñas negativas de lo esperado, lo que indica que varios productos no cumplen con las expectativas. Sin embargo, también hay un alto número de reseñas positivas, lo que sugiere una polarización: algunos productos generan gran satisfacción, mientras que otros causan fuerte insatisfacción.
+
+## **Regresión líneal**
 
 
 ### **Conclusiones**
