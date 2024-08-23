@@ -547,7 +547,7 @@ Los productos con un alto descuento (mayor a 62%) tienen 3.03 probabilidades de 
 
 El riesgo relativo de 0.94 indica que, en términos estadísticos, la presencia de estas palabras negativas ("problem", "low", "bad", "hard", "stopped", "poor", "difficult", "lag", "damaged", "disappointed", "loose", "defective", "cut", "damage", "lower", "disappointed", "defective") no incrementa significativamente el riesgo de obtener una calificación baja en comparación con reseñas que no contienen estas palabras. De hecho, un riesgo relativo menor que 1 sugiere una ligera disminución en el riesgo, aunque en este caso, dado que los riesgos absolutos son 0, la interpretación es que no hay una diferencia significativa.
 
-## **Regresión Logística**
+## **Análisis de Significancia Estadística**
 ** 
 
 ### **Conclusiones**
