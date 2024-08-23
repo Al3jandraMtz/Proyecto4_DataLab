@@ -601,7 +601,7 @@ Interpretación: Estos resultados sugieren que la categoría "Car&Motorbike" no 
 
 La categoría “Computers&Accessories” está recibiendo muchas más reseñas negativas de lo esperado, lo que indica que varios productos no cumplen con las expectativas. Sin embargo, también hay un alto número de reseñas positivas, lo que sugiere una polarización: algunos productos generan gran satisfacción, mientras que otros causan fuerte insatisfacción.
 
- [Consulta Colab](python/regresión_logistica.ipynb)
+ [Consulta Colab](Colab/P4_RiesgoRelativo.ipynb)
 
 ## **Regresión líneal**
 
