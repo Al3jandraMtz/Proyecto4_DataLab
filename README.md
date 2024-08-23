@@ -511,6 +511,33 @@ La hipótesis 6 está respaldada por los datos. Existe una relación fuerte entr
 
 ## Riesgo Relativo
 
+**1. Categoría de Descuento vs Categoría de Calificación**
+
+>
+>![alt text](Imagenes/RR1.png)
+
+>
+>![alt text](Imagenes/RR2.png)
+
+**Interpretación:**
+
+Los productos con un alto descuento (mayor a 62%) tienen 3.03 probabilidades de tener una calificación baja (menor a 3 estrellas) en comparacíon a otros productos con bajo o nulo descuento.
+
+**2. Riesgo Relativo de una Calificación Alta por Categoría de Producto**
+
+![alt text](image-1.png)
+
+**Interpretación:**
+
+* MusicalInstruments: La categoría tiene un 50% de productos con calificaciones altas (≥ 4).
+* Health&PersonalCare, HomeImprovement, OfficeProducts, Toys&Games: Los productos en estas categorías son dos veces más propensos a recibir calificaciones altas.
+
+* Computers&Accessories: Esta categoría tiene un 64.8% más de probabilidad de recibir calificaciones altas que MusicalInstruments.
+
+* Electronics: Los productos en la categoría "Electronics" tienen un 47.8% más de probabilidad de recibir calificaciones altas.
+
+* Home&Kitchen: Esta categoría tiene un 35.2% más de probabilidad de recibir calificaciones altas.
+
 
 ## **Regresión Logística**
 ** 
