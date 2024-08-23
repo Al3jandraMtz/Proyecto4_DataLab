@@ -34,6 +34,8 @@ Datalab se ha establecido como un socio de confianza para una variedad de empres
 
 ### 1.1 Limpieza de datos 
 
+
+
 Se normalizan los datos de la tabla amazon_review.
 
 Se realiza exploracion de los dos data set proporcionados:
@@ -158,6 +160,8 @@ Derivado de la exploración se toma la decisión de normalizar los datos para ev
 
 >
 >![alt text](Imagenes/Normalizacion.png)
+
+Puedes revisar la consulta [aquí](python/regresión_logistica.ipynb).  
 
 ### 1.3 Análisis exploratorio
 
