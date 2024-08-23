@@ -8,7 +8,7 @@
   - [Limpieza de datos ](#limpieza_de_datos)
   - [Análisis exploratorio](#análisis_exploratorio)
   - [Hipótesis](#hipótesis)
-  - [Score de Riesgo](#score_de_riesgo)
+  - [Regresión Líneal](#regresion_lineal)
   - [Regresión Logistica](#regresion_logistica)
 - [Conclusiones](#Conclusiones)
 - [Recomendaciones](#Recomendaciones)
@@ -24,7 +24,7 @@ Datalab se ha establecido como un socio de confianza para una variedad de empres
 
  El objetivo de este análisis es entender las tendencias y patrones en las calificaciones y reseñas de productos disponibles en Amazon, con el fin de proporcionar insights que puedan ayudar a mejorar la estrategia de precios, descuentos y satisfacción del cliente. 
 
-### **Herramientas**
+## **Herramientas**
   1. Google BigQuery
   2. Google Colab
   3. Tableu
@@ -32,7 +32,7 @@ Datalab se ha establecido como un socio de confianza para una variedad de empres
 
 ## **Procesamiento**
 
-### 1.1 Limpieza de datos 
+## 1. Limpieza de datos 
 
 
 
@@ -166,7 +166,7 @@ Derivado de la exploración se toma la decisión de normalizar los datos para ev
 [Consulta Colab](Colab/Proyecto4_Limpieza_Procesamiento.ipynb) 
 
 
-### 1.2 Análisis exploratorio
+## 2. Análisis exploratorio
 
 1.- Agrupación de las variables categoricas
 
@@ -213,7 +213,7 @@ Procesamiento:
 * Tokenización: El texto se divide en unidades más pequeñas, como palabras o frases, que luego se analizan individualmente.
 
 * Asignación de Sentimiento: Cada palabra o frase se evalúa para determinar su "carga emocional". Esto se puede hacer utilizando lexicones de sentimiento (listas predefinidas de palabras con sus correspondientes valores de sentimiento) o modelos de machine learning entrenados en grandes conjuntos de datos etiquetados.
-
+ 
 * Cálculo del Sentimiento Global: El sentimiento global del texto se calcula combinando los valores de sentimiento individuales de cada palabra o frase. Esto puede ser un simple promedio o una suma ponderada dependiendo del enfoque.
 
 Identificación de palabras positivas o negativas
@@ -291,7 +291,7 @@ Interpretación:
 ### Correlación entre variables
 
 >
->![alt text](c:\Users\aleja\OneDrive\Imágenes\Capturas de pantalla\Captura de pantalla 2024-08-20 173138.png)
+>![alt text](Imagenes/Correlacion.png)
 
 **actual_price y discount_percentage:**
 
@@ -321,12 +321,10 @@ Correlación: 0.16 Hay una correlación moderadamente positiva entre el sentimie
 
 Correlación débil con todas las variables. El sentimiento no muestra una correlación fuerte con ninguna de las otras variables numéricas en el conjunto de datos. Esto indica que las emociones expresadas en las reseñas no dependen significativamente de los precios, descuentos o calificaciones.
 
-### 1.3 Hipótesis
+## 3. Hipótesis
 
 ### 1.- Hipótesis sobre la Correlación entre Descuentos y Calificaciones:  
 "Los productos con mayores descuentos tienden a tener calificaciones promedio más bajas debido a la percepción de menor calidad."
-
-Aquí tienes una versión parafraseada y más corta del texto:
 
 **Metodología:**
 
@@ -384,14 +382,16 @@ El concepto de que "los productos con mayores descuentos suelen tener calificaci
 
 Metodología:
   
-1. Utilizamos la calificación promedio ajustada de los productos como la variable dependiente.
+1. Utilizamos la calificación promedio de los productos como la variable dependiente.
 2. Definimos las reseñas negativas en función del análisis de sentimiento, considerando como negativas aquellas reseñas cuyo puntaje de sentimiento era menor o igual a 0.
 3. Los productos fueron segmentados por categorías (category_1, category_2, category_3, y category_4) para analizar la relación dentro de cada categoría.
 4. Se calculó la correlación de Pearson entre el número de reseñas negativas y la calificación promedio dentro de cada categoría de productos.
 5. Significancia Estadística: Se utilizó el valor p para determinar la significancia estadística de las correlaciones. Un valor p menor a 0.05 indicaría que la correlación es significativa.
 
+>>>
+>>>![alt text](h3.1.png)
 >
->![alt text](image.png)
+>![alt text](H3.png)
 
 **Interpretación:**
 
