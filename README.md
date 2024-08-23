@@ -518,7 +518,7 @@ La mayoría de los datos están concentrados alrededor de puntuaciones de sentim
 
 La hipótesis 6 está respaldada por los datos. Existe una relación fuerte entre las calificaciones promedio y la satisfacción promedio por categoría de producto, lo que indica que las categorías con mayores calificaciones promedio también tienen mayor satisfacción del cliente.
 
-[Consulta Python](python/regresión_logistica.ipynb).
+[Consulta Python](Colab/P4_AnalisisExploratorio.ipynb).
 
 ## Riesgo Relativo
 
@@ -536,7 +536,7 @@ Los productos con un alto descuento (mayor a 62%) tienen 3.03 probabilidades de 
 
 **2. Riesgo Relativo de una Calificación Alta por Categoría de Producto**
 
-![alt text](image-1.png)
+![alt text](Imagenes/RR3.png)
 
 **Interpretación:**
 
@@ -549,14 +549,16 @@ Los productos con un alto descuento (mayor a 62%) tienen 3.03 probabilidades de 
 
 * Home&Kitchen: Esta categoría tiene un 35.2% más de probabilidad de recibir calificaciones altas.
 
-** Riesgo Relativo de Calificaciones según el Contenido de las Reseñas **
+**3. Riesgo Relativo de Calificaciones según el Contenido de las Reseñas**
 
 >
->![alt text](image-2.png)
+>![alt text](Imagenes/RR4.png)
 
 **Interpretación:**
 
 El riesgo relativo de 0.94 indica que, en términos estadísticos, la presencia de estas palabras negativas ("problem", "low", "bad", "hard", "stopped", "poor", "difficult", "lag", "damaged", "disappointed", "loose", "defective", "cut", "damage", "lower", "disappointed", "defective") no incrementa significativamente el riesgo de obtener una calificación baja en comparación con reseñas que no contienen estas palabras. De hecho, un riesgo relativo menor que 1 sugiere una ligera disminución en el riesgo, aunque en este caso, dado que los riesgos absolutos son 0, la interpretación es que no hay una diferencia significativa.
+
+ [Consulta Colab](python/regresión_logistica.ipynb)
 
 ## **Análisis de Significancia Estadística**
 
