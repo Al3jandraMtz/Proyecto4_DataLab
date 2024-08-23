@@ -163,10 +163,10 @@ Derivado de la exploración se toma la decisión de normalizar los datos para ev
 >
 >![alt text](Imagenes/Normalizacion.png)
 
-[Consulta aquí](Colab/Proyecto4_Limpieza_Procesamiento.ipynb) 
+[Consulta Colab](Colab/Proyecto4_Limpieza_Procesamiento.ipynb) 
 
 
-### 1.3 Análisis exploratorio
+### 1.2 Análisis exploratorio
 
 1.- Agrupación de las variables categoricas
 
@@ -186,6 +186,8 @@ Derivado de la exploración se toma la decisión de normalizar los datos para ev
   >
   >![alt text](Imagenes/MedidasTendencia.png)
 
+  [Consulta Big Query](SQL/VariablesCategoricas)
+
   * Distribuición de las variables
   
   Raiting:
@@ -203,7 +205,7 @@ Derivado de la exploración se toma la decisión de normalizar los datos para ev
   >
   >![alt text](Imagenes/Cuartiles.png)
 
-  ### 1.2 Análisis de Sentimiento
+  ### Análisis de Sentimiento
 
 El análisis de sentimiento, también conocido como minería de opinión, es una técnica de procesamiento de lenguaje natural (NLP) utilizada para identificar y extraer información subjetiva de un texto. Su objetivo principal es determinar la actitud, opinión o emoción de un autor respecto a un tema, producto o servicio en particular. El análisis de sentimiento clasifica el texto en categorías como positivo, negativo o neutral, y en algunos casos, puede identificar emociones más específicas como alegría, ira o tristeza.
 
@@ -286,7 +288,7 @@ Interpretación:
 
 * Musical Instruments y Health & Personal Care: Estas categorías tienen los promedios de sentimiento más bajos, siendo "Health & Personal Care" la que tiene el promedio más bajo, cercano a 0.15. Esto sugiere que las reseñas en estas categorías son menos positivas en comparación con las demás, lo que podría indicar problemas o insatisfacción con ciertos productos.
 
-### 1.3 Correlación entre variables
+### Correlación entre variables
 
 >
 >![alt text](c:\Users\aleja\OneDrive\Imágenes\Capturas de pantalla\Captura de pantalla 2024-08-20 173138.png)
