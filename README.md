@@ -605,6 +605,19 @@ Validación con regresión líneal de palabras positivas  y calificación promed
 
 ## **Regresión logística**
 
+Validación con regresión logística de palabras positivas  y calificación promedio.
+
+>
+>![alt text](Imagenes/RL3.png)
+
+
+>
+>![alt text](Imagenes/R4.png)
+
+**Interpretación:¨**
+
+La gráfica nos muestra que existe una relación positiva entre el número de palabras positivas y la probabilidad de obtener una calificación alta. Sin embargo, el aumento en la probabilidad se reduce a medida que se alcanzan números más altos de palabras positivas.
+
 
 ### **Conclusiones**
 
