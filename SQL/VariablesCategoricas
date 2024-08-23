@@ -1,0 +1,100 @@
+#Distribucion de los Productos
+
+SELECT category_1, category_2, category_3, category_4, COUNT(*) as product_count
+FROM p4-datalab.Data_Set.Data_Set
+GROUP BY category_1, category_2, category_3, category_4;
+
+
+SELECT 
+  category_1,
+  category_2,
+  category_3,
+  category_4,
+  COUNT(*) AS count
+FROM 
+p4-datalab.Data_Set.Data_Set
+GROUP BY 
+  category_1,
+   category_2,
+  category_3,
+  category_4
+ORDER BY 
+  count DESC
+LIMIT 30;
+
+
+#Top Raitings
+
+SELECT 
+  adjusted_rating,
+  COUNT(*) AS count
+FROM 
+p4-datalab.Data_Set.cleaned_URL_content_ 
+GROUP BY 
+  adjusted_rating
+ORDER BY 
+  adjusted_rating DESC;
+
+
+#Tendencia Central
+
+-- Consulta para calcular las medidas de tendencia central y los valores mínimo y máximo de las variables numéricas
+WITH CentralTendency AS (
+    SELECT
+        'discounted_price' AS variable,
+        AVG(discounted_price) AS mean_value,
+        APPROX_QUANTILES(discounted_price, 100)[OFFSET(50)] AS median_value,
+        ARRAY_AGG(discounted_price ORDER BY discounted_price)[OFFSET(0)] AS mode_value,
+        MIN(discounted_price) AS min_value,
+        MAX(discounted_price) AS max_value
+    FROM `p4-datalab.Data_Set.Data_Set`
+    UNION ALL
+    SELECT
+        'actual_price' AS variable,
+        AVG(actual_price) AS mean_value,
+        APPROX_QUANTILES(actual_price, 100)[OFFSET(50)] AS median_value,
+        ARRAY_AGG(actual_price ORDER BY actual_price)[OFFSET(0)] AS mode_value,
+        MIN(actual_price) AS min_value,
+        MAX(actual_price) AS max_value
+    FROM `p4-datalab.Data_Set.Data_Set`
+    UNION ALL
+    SELECT
+        'discount_percentage' AS variable,
+        AVG(discount_percentage) AS mean_value,
+        APPROX_QUANTILES(discount_percentage, 100)[OFFSET(50)] AS median_value,
+        ARRAY_AGG(discount_percentage ORDER BY discount_percentage)[OFFSET(0)] AS mode_value,
+        MIN(discount_percentage) AS min_value,
+        MAX(discount_percentage) AS max_value
+    FROM `p4-datalab.Data_Set.Data_Set`
+    UNION ALL
+    SELECT
+        'user_id_count' AS variable,
+        AVG(user_id_count) AS mean_value,
+        APPROX_QUANTILES(user_id_count, 100)[OFFSET(50)] AS median_value,
+        ARRAY_AGG(user_id_count ORDER BY user_id_count)[OFFSET(0)] AS mode_value,
+        MIN(user_id_count) AS min_value,
+        MAX(user_id_count) AS max_value
+    FROM `p4-datalab.Data_Set.Data_Set`
+    UNION ALL
+    SELECT
+        'rating_count' AS variable,
+        AVG(rating_count) AS mean_value,
+        APPROX_QUANTILES(rating_count, 100)[OFFSET(50)] AS median_value,
+        ARRAY_AGG(rating_count ORDER BY rating_count)[OFFSET(0)] AS mode_value,
+        MIN(rating_count) AS min_value,
+        MAX(rating_count) AS max_value
+    FROM `p4-datalab.Data_Set.Data_Set`
+    UNION ALL
+    SELECT
+        'adjusted_rating' AS variable,
+        AVG(adjusted_rating) AS mean_value,
+        APPROX_QUANTILES(adjusted_rating, 100)[OFFSET(50)] AS median_value,
+        ARRAY_AGG(adjusted_rating ORDER BY adjusted_rating)[OFFSET(0)] AS mode_value,
+        MIN(adjusted_rating) AS min_value,
+        MAX(adjusted_rating) AS max_value
+    FROM `p4-datalab.Data_Set.Data_Set`
+)
+
+SELECT * FROM CentralTendency;
+
+

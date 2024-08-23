@@ -1,0 +1,94 @@
+#Tabla_review
+
+SELECT
+    user_id,
+    user_name,
+    review_id,
+    review_title,
+    review_content,
+    img_link,
+    product_link,
+    product_id,
+    rating,
+    rating_count,
+    CASE
+        -- Verificar si el user_id tiene un formato no esperado
+        WHEN REGEXP_CONTAINS(user_id, r'^[A-Z0-9]{20,30}$') THEN 'ID Correcto'
+        ELSE 'ID Incorrecto'
+    END AS user_id_check,
+    CASE
+        -- Verificar si el rating es un número flotante
+        WHEN SAFE_CAST(rating AS FLOAT64) IS NOT NULL THEN 'Rating Correcto'
+        ELSE 'Rating Incorrecto'
+    END AS rating_check,
+    CASE
+        -- Verificar que el rating_count no sea negativo
+        WHEN rating_count < 0 THEN 'rating_count fuera de rango'
+        ELSE 'rating_count correcto'
+    END AS rating_count_check
+FROM
+    p4-datalab.Data_Set.amazon_review_temp
+WHERE
+    -- Filtro para capturar solo registros con posibles errores
+    REGEXP_CONTAINS(user_id, r'^[A-Z0-9]{20,30}$') = FALSE
+    OR SAFE_CAST(rating AS FLOAT64) IS NULL
+    OR rating_count < 0;
+
+
+
+    #Tabla_product
+
+    SELECT
+    product_id,
+    product_name,
+    category,
+    discounted_price,
+    actual_price,
+    discount_percentage,
+    about_product,
+    CASE
+        -- Verificar si discounted_price es consistente con el discount_percentage aplicado al actual_price
+        WHEN ABS(discounted_price - (actual_price * (1 - discount_percentage))) <= 10 THEN 'Consistente'
+        ELSE 'Inconsistente'
+    END AS price_discount_consistency,
+    CASE
+        -- Verificar si discount_percentage es coherente (ejemplo: no debería ser 1 (100%) si el precio es mayor que 0)
+        WHEN discount_percentage = 1 AND discounted_price > 0 THEN 'Descuento no coherente'
+        WHEN discount_percentage > 1 OR discount_percentage < 0 THEN 'Descuento fuera de rango'
+        ELSE 'Descuento coherente'
+    END AS discount_percentage_coherence,
+    CASE
+        -- Corroborar que los precios estén bien formados (por ejemplo, no sean negativos o fuera de un rango razonable)
+        WHEN actual_price < 0 OR discounted_price < 0 THEN 'Precio negativo'
+        WHEN actual_price > 1000000 THEN 'Precio fuera de rango razonable'
+        ELSE 'Precio correcto'
+    END AS price_validity,
+    CASE
+        -- Verificar formato del product_id (Ejemplo: 10 caracteres alfanuméricos)
+        WHEN LENGTH(product_id) != 10 OR NOT REGEXP_CONTAINS(product_id, r'^[A-Z0-9]+$') THEN 'Formato incorrecto'
+        ELSE 'Formato correcto'
+    END AS product_id_status,
+    CASE
+        -- Verificar que product_name no esté vacío o sea nulo
+        WHEN product_name IS NULL OR TRIM(product_name) = '' THEN 'Nombre de producto faltante'
+        ELSE 'Nombre de producto válido'
+    END AS product_name_status,
+    CASE
+        -- Verificar que category no esté vacía o sea nula
+        WHEN category IS NULL OR TRIM(category) = '' THEN 'Categoría faltante'
+        ELSE 'Categoría válida'
+    END AS category_status,
+    CASE
+        -- Verificar que about_product no esté vacío o sea nulo
+        WHEN about_product IS NULL OR TRIM(about_product) = '' THEN 'Descripción del producto faltante'
+        ELSE 'Descripción del producto válida'
+    END AS about_product_status,
+    -- Calcular el discount_percentage correcto basado en actual_price y discounted_price
+    (1 - (discounted_price / actual_price)) AS calculated_discount_percentage,
+    -- Verificar si el discount_percentage calculado coincide con el discount_percentage existente
+    CASE
+        WHEN ROUND(1 - (discounted_price / actual_price), 2) = discount_percentage THEN TRUE
+        ELSE FALSE
+    END AS discount_match
+FROM
+    p4-datalab.Data_Set.amazon_product_temp;
