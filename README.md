@@ -605,7 +605,7 @@ La categoría “Computers&Accessories” está recibiendo muchas más reseñas 
 
 ## **Regresión líneal**
 
-Validación con regresión líneal de palabras positivas  y calificación promedio.
+Validación con regresión líneal de palabras positivas  y calificación promedio..
 
 >
 >![alt text](Imagenes/RL1.png)
