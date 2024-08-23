@@ -389,9 +389,9 @@ Metodología:
 5. Significancia Estadística: Se utilizó el valor p para determinar la significancia estadística de las correlaciones. Un valor p menor a 0.05 indicaría que la correlación es significativa.
 
 >>>
->>>![alt text](h3.1.png)
+>>>![alt text](Imagenes/h2.1.png)
 >
->![alt text](H3.png)
+>![alt text](Imagenes/H2.2.png)
 
 **Interpretación:**
 
@@ -405,7 +405,7 @@ Metodología:
   El valor p (0.0025) indica que la correlación, aunque débil, es estadísticamente significativa, sugiriendo que la relación observada no es por azar.
 
   * **Productos Específicos:**
-  Algunos productos, como B00K32PEW4, tienen calificaciones altas a pesar de algunas reseñas negativas, indicando que unas pocas reseñas negativas no afectan mucho si hay suficientes reseñas positivas.
+  Algunos productos, como B00K32PEW4 (Casio MJ-120D 150 Steps Check and Correct Desktop Calculator with Tax Keys, Black), tienen calificaciones altas a pesar de algunas reseñas negativas, indicando que unas pocas reseñas negativas no afectan mucho si hay suficientes reseñas positivas.
  
 
 
@@ -489,7 +489,7 @@ Metodología:
 >![alt text](Imagenes/SentimientoVSCalificacion.png)
 
 
-Interpretación:
+**Interpretación:**
 
 La mayoría de los datos están concentrados alrededor de puntuaciones de sentimiento (entre -0.2 y 0.4) y calificaciones promedio que oscilan entre 3.5 y 4.5.
 
@@ -517,6 +517,8 @@ La mayoría de los datos están concentrados alrededor de puntuaciones de sentim
 **Conclusión:**
 
 La hipótesis 6 está respaldada por los datos. Existe una relación fuerte entre las calificaciones promedio y la satisfacción promedio por categoría de producto, lo que indica que las categorías con mayores calificaciones promedio también tienen mayor satisfacción del cliente.
+
+[Consulta Python](python/regresión_logistica.ipynb).
 
 ## Riesgo Relativo
 
