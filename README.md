@@ -601,7 +601,7 @@ Interpretación: Estos resultados sugieren que la categoría "Car&Motorbike" no 
 
 La categoría “Computers&Accessories” está recibiendo muchas más reseñas negativas de lo esperado, lo que indica que varios productos no cumplen con las expectativas. Sin embargo, también hay un alto número de reseñas positivas, lo que sugiere una polarización: algunos productos generan gran satisfacción, mientras que otros causan fuerte insatisfacción.
 
- [Consulta Colab](Colab/P4_RiesgoRelativo.ipynb)..
+ [Consulta Colab](Colab/P4_Significancia.ipynb)
 
 ## **Regresión líneal**
 
@@ -616,6 +616,8 @@ Validación con regresión líneal de palabras positivas  y calificación promed
 **Interpretación:**
 
  La gráfica muestra que las calificaciones promedio suelen estar asociadas con reseñas que contienen entre 0 y 7 palabras positivas. Aunque la relación entre el número de palabras positivas y las calificaciones es débil, la línea de tendencia indica que, a medida que aumenta el número de palabras positivas, la calificación promedio también tiende a incrementarse.
+
+  [Consulta Colab](Colab/P4_Significancia.ipynb)
 
 ## **Regresión logística**
 
