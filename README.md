@@ -40,7 +40,7 @@ Se normalizan los datos de la tabla amazon_review.
 
 Se realiza exploracion de los dos data set proporcionados:
 
-1.- Nulos
+**1. Nulos**
 
 Tabla: amazon_product
   * about_product - 4
@@ -74,13 +74,13 @@ Tabla: amazon_review
 >![alt text](Imagenes/Imputacion.png)
 
         Acciones: 
-        + Valores nulos en img_link y product_link: Se decidió mantener los valores nulos en estas columnas ya que no son variables críticas para el análisis.
-        + Imputación de valores en rating_count: Se calcularon las medias de rating_count basadas en los valores de rating. Para el rating de 5, la media fue de 14, mientras que para el rating de 3, la media fue de 467. Estos valores fueron utilizados para imputar los nulos en rating_count.
+        * Valores nulos en img_link y product_link: Se decidió mantener los valores nulos en estas columnas ya que no son variables críticas para el análisis.
+        * Imputación de valores en rating_count: Se calcularon las medias de rating_count basadas en los valores de rating. Para el rating de 5, la media fue de 14, mientras que para el rating de 3, la media fue de 467. Estos valores fueron utilizados para imputar los nulos en rating_count.
  
+ [Consulta BigQuery](SQL/nulls)
 
 
-
-2.- Duplicados
+**2. Duplicados**
 
 Tabla: amazon_product
   * about_product - 130
@@ -96,7 +96,7 @@ Tabla: amazon_product
   >![alt text](Imagenes/Duplicado_product.png)
 
     Acciones:
-     + En la columna product_id, identificamos 96 valores únicos que originalmente estaban duplicados. Sin embargo, estos valores aparecen duplicados múltiples veces, resultando en un total de 214 duplicados en el dataset. Esto significa que hay 118 duplicados adicionales que no fueron contabilizados inicialmente, por lo que se decide a eliminarlos de nuestro data_set, como resultado, se obtuvieron un total de 1,351 registros únicos.
+     * En la columna product_id, identificamos 96 valores únicos que originalmente estaban duplicados. Sin embargo, estos valores aparecen duplicados múltiples veces, resultando en un total de 214 duplicados en el dataset. Esto significa que hay 118 duplicados adicionales que no fueron contabilizados inicialmente, por lo que se decide a eliminarlos de nuestro data_set, como resultado, se obtuvieron un total de 1,351 registros únicos.
 
 Tabla: amazon_review
   * user_id - 144
@@ -116,11 +116,11 @@ Duplicados desglosados
 >![alt text](Imagenes/Duplicados_review.png)
 
     Acciones: 
-    + En la columna product_id, identificamos 92 valores únicos que originalmente estaban duplicados. Esto significa que hay 114 duplicados adicionales que no fueron contabilizados inicialmente, por lo que se decide a eliminarlos de nuestro data_set, como resultado, se obtuvieron un total de 1,351 registros únicos.
+    * En la columna product_id, identificamos 92 valores únicos que originalmente estaban duplicados. Esto significa que hay 114 duplicados adicionales que no fueron contabilizados inicialmente, por lo que se decide a eliminarlos de nuestro data_set, como resultado, se obtuvieron un total de 1,351 registros únicos.
 
+[Consulta BigQuery](SQL/Duplicados_product)
 
-
-3.- Valores fuera del alcance 
+**3. Valores fuera del alcance** 
 
 Tabla: amazon_product
   * about_product - 4 datos faltantes
@@ -154,6 +154,8 @@ Adicionalmente, se analizó la columna de identificadores de usuarios, contando 
 >
 >![alt text](Imagenes/ValoresFuera.png)
 
+[Consulta BigQuery](SQL/FAlcance)
+
 4.- Normalización de datos
 
 Derivado de la exploración se toma la decisión de normalizar los datos para evitar redundancias al eliminar los user_id y review_id excedentes.
@@ -161,7 +163,8 @@ Derivado de la exploración se toma la decisión de normalizar los datos para ev
 >
 >![alt text](Imagenes/Normalizacion.png)
 
-Puedes revisar la consulta [aquí](python/regresión_logistica.ipynb).  
+[Consulta aquí](Colab/Proyecto4_Limpieza_Procesamiento.ipynb) 
+
 
 ### 1.3 Análisis exploratorio
 
