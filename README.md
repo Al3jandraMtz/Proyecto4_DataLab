@@ -572,7 +572,7 @@ Hipótesis:
 >
 >![alt text](Imagenes/chi2.png)
 
-Interpretación:
+**Interpretación:**
 * Frecuencias obesrvadas:
    * False: Cantidad de reseñas negativas en la categoría.
   * True: Cantidad de reseñas positivas en la categoría.
@@ -581,7 +581,6 @@ Interpretación:
 * Grados de libertad: Total de categorías menos 1.
 *Frecuencias esperadas: Muestran cómo se distribuirían las calificaciones si no hubiera ninguna relación entre las categorías de producto y las calificaciones altas. 
 
-Tus anotaciones están bastante bien encaminadas, pero aquí te las presento corregidas y organizadas para mayor claridad:
 
 Análisis de Categorías de Producto y Satisfacción del Cliente
 
@@ -598,9 +597,11 @@ Interpretación: Estos resultados sugieren que la categoría "Car&Motorbike" no 
 >
 >![alt text](Imagenes/Chi.png)
 
-Interpretación:
+**Interpretación:**
 
 La categoría “Computers&Accessories” está recibiendo muchas más reseñas negativas de lo esperado, lo que indica que varios productos no cumplen con las expectativas. Sin embargo, también hay un alto número de reseñas positivas, lo que sugiere una polarización: algunos productos generan gran satisfacción, mientras que otros causan fuerte insatisfacción.
+
+ [Consulta Colab](python/regresión_logistica.ipynb)
 
 ## **Regresión líneal**
 
