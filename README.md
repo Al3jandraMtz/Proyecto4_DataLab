@@ -594,12 +594,14 @@ La categoría “Computers&Accessories” está recibiendo muchas más reseñas 
 Validación con regresión líneal de palabras positivas  y calificación promedio.
 
 >
->![alt text](RL1.png)
+>![alt text](Imagenes/RL1.png)
 
 >
->![alt text](RL2.png)
+>![alt text](Imagenes/RL2.png)
 
+**Interpretación:**
 
+ La gráfica muestra que las calificaciones promedio suelen estar asociadas con reseñas que contienen entre 0 y 7 palabras positivas. Aunque la relación entre el número de palabras positivas y las calificaciones es débil, la línea de tendencia indica que, a medida que aumenta el número de palabras positivas, la calificación promedio también tiende a incrementarse.
 
 ## **Regresión logística**
 
