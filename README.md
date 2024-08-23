@@ -501,7 +501,7 @@ La mayoría de los datos están concentrados alrededor de puntuaciones de sentim
 2. Calcular la calificación promedio de cada variable.
 
 >
->![alt text](10.png)
+>![alt text](Imagenes/10.png)
 
 **Interpretación:** Una correlación de 0.85 indica una fuerte relación positiva entre la calificación promedio y la satisfacción promedio.
 
@@ -509,7 +509,9 @@ La mayoría de los datos están concentrados alrededor de puntuaciones de sentim
 
 La hipótesis 6 está respaldada por los datos. Existe una relación fuerte entre las calificaciones promedio y la satisfacción promedio por categoría de producto, lo que indica que las categorías con mayores calificaciones promedio también tienen mayor satisfacción del cliente.
 
-## Score de Riesgo
+## Riesgo Relativo
+
+
 ## **Regresión Logística**
 ** 
 
