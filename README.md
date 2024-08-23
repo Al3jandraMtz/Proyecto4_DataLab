@@ -591,6 +591,18 @@ La categoría “Computers&Accessories” está recibiendo muchas más reseñas 
 
 ## **Regresión líneal**
 
+Validación con regresión líneal de palabras positivas  y calificación promedio.
+
+>
+>![alt text](RL1.png)
+
+>
+>![alt text](RL2.png)
+
+
+
+## **Regresión logística**
+
 
 ### **Conclusiones**
 
