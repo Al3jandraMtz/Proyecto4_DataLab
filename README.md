@@ -548,7 +548,36 @@ Los productos con un alto descuento (mayor a 62%) tienen 3.03 probabilidades de 
 El riesgo relativo de 0.94 indica que, en términos estadísticos, la presencia de estas palabras negativas ("problem", "low", "bad", "hard", "stopped", "poor", "difficult", "lag", "damaged", "disappointed", "loose", "defective", "cut", "damage", "lower", "disappointed", "defective") no incrementa significativamente el riesgo de obtener una calificación baja en comparación con reseñas que no contienen estas palabras. De hecho, un riesgo relativo menor que 1 sugiere una ligera disminución en el riesgo, aunque en este caso, dado que los riesgos absolutos son 0, la interpretación es que no hay una diferencia significativa.
 
 ## **Análisis de Significancia Estadística**
-** 
+
+Metodología:
+  1. Chi-cuadrado para probar la independencia entre la categoría de producto y la proporción de calificaciones altas.
+
+Hipótesis:
+* Alternativa (H1): Existe una relación significativa entre la categoría de producto y la probabilidad de obtener una calificación alta.
+
+
+>
+>![alt text](Imagenes/chi2.png)
+
+Interpretación:
+* False: Cantidad de reseñas negativas en la categoría.
+* True: Cantidad de reseñas positivas en la categoría.
+* Chi-cuadrado: (39.29%) La magnitid de la diferencia en las frecuencias observadas.
+* p-value: (0.00) Sugiere que hay una relación significativa entre la categoría del producto y la probabilidad de recibir una relación alta.
+* Grados de libertad: Total de categorías menos 1.
+*Frecuencias esperadas: Muestran cómo se distribuirían las calificaciones si no hubiera ninguna relación entre las categorías de producto y las calificaciones altas. 
+    * Car&Mobile: Los resultados nos muestran que esta categoría esperaria tener 2.52 reseñas negativas y solo tiene una. Y 7.47 reseñas positivas, y solo tiene 0.
+    * Computers&Accesories: 
+
+Resultados:
+
+Chi-cuadrado: Mide la magnitud de la diferencia entre las frecuencias observadas y esperadas.
+p-value: Si el valor p es menor que un umbral (generalmente 0.05), se rechaza la hipótesis nula, sugiriendo que existe una relación significativa.
+Grados de libertad: Depende del número de categorías en ambas variables.
+Interpretación de Resultados:
+p-value < 0.05: Rechazas la hipótesis nula y concluyes que hay una relación significativa entre la categoría de producto y la probabilidad de obtener una calificación alta.
+p-value >= 0.05: No se rechaza la hipótesis nula, lo que sugiere que no hay evidencia suficiente para afirmar que las dos variables están relacionadas.
+
 
 ### **Conclusiones**
 
