@@ -52,7 +52,7 @@ Tabla: amazon_product
   * user_id - 0
   * discounted_price - 0
 
->Nulos
+> Nulos
 >![alt text](Imagenes/nulos.png)
 
 
@@ -630,7 +630,7 @@ Validación con regresión logística de palabras positivas  y calificación pro
 >
 >![alt text](Imagenes/R4.png)
 
-**Interpretación:¨**
+**Interpretación:**
 
 La gráfica nos muestra que existe una relación positiva entre el número de palabras positivas y la probabilidad de obtener una calificación alta. Sin embargo, el aumento en la probabilidad se reduce a medida que se alcanzan números más altos de palabras positivas.
 
