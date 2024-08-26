@@ -638,6 +638,46 @@ La gráfica nos muestra que existe una relación positiva entre el número de pa
 
 ### **Conclusiones**
 
+**1. Efecto de los descuentos en calificaciones:** 
+
+  Los productos con mayores descuentos tienden a tener calificaciones más bajas en varias categorías, lo que sugiere que los consumidores pueden asociar descuentos altos con menor calidad.
+
+**2. Importancia de la calidad:** 
+
+"Calidad" es la palabra clave más mencionada en reseñas positivas, indicando que es un factor crucial para la satisfacción del cliente.
+
+**3. Polarización en productos tecnológicos:** 
+
+Las categorías como "Computers & Accessories" muestran que algunos productos reciben calificaciones muy altas mientras que otros reciben calificaciones muy bajas, lo que crea un contraste pronunciado, esto puede deberse a inconsistencias en la calidad percibida de los productos, donde algunos cumplen o exceden las expectativas del consumidor, mientras que otros no alcanzan los estándares esperados.
+
+**4. Análisis de sentimiento débilmente correlacionado con calificaciones:** 
+
+Aunque hay una correlación entre el sentimiento de las reseñas y las calificaciones, esta relación es débil, indicando la influencia de otros factores.
+
+**5. Satisfacción varía por categoría:** 
+
+Las categorías "Toys & Games" y "Home & Kitchen" tienen mayores niveles de satisfacción, mientras que "Health & Personal Care" y "Musical Instruments" tienen menos.
+
+**6. Frecuencia de reseñas y calificaciones:** 
+
+Hay una correlación débil entre el número de reseñas y la calificación promedio, lo que sugiere que el volumen de reseñas no es un predictor fuerte de calificación.
+
+**7. Palabras clave y calificaciones:**
+
+ Las palabras clave más comunes en reseñas positivas, como "calidad", "fácil de usar", "rendimiento", y "precio", están asociadas con calificaciones altas. Sin embargo, la presencia de un mayor número de palabras positivas no siempre se traduce en una calificación aún más alta. Esto sugiere que una reseña puede contener múltiples aspectos positivos, pero si también hay menciones negativas o críticas, la calificación final puede no ser tan alta como lo indicarían las palabras positivas por sí solas.
+
+**8. Relación de características del producto con satisfacción:**
+
+ Características como la "facilidad de uso" y "rendimiento" están fuertemente asociadas con reseñas positivas, destacando su importancia para los consumidores.
+
+**9. Riesgo relativo de calificaciones bajas por descuentos:**
+
+ Los productos con descuentos altos tienen un mayor riesgo de obtener calificaciones bajas, particularmente en categorías como "Home & Kitchen".
+
+**10. Estrategias de marketing dirigidas:**
+
+ Los diferentes niveles de satisfacción y correlaciones en cada categoría sugieren la necesidad de estrategias de marketing y mejoras específicas para cada segmento.
+
 ### **Recomendaciones**
 
 
