@@ -676,9 +676,21 @@ Hay una correlación débil entre el número de reseñas y la calificación prom
 
 **10. Estrategias de marketing dirigidas:**
 
-1 Los diferentes niveles de satisfacción y correlaciones en cada categoría sugieren la necesidad de estrategias de marketing y mejoras específicas para cada segmento.
+Los diferentes niveles de satisfacción y correlaciones en cada categoría sugieren la necesidad de estrategias de marketing y mejoras específicas para cada segmento.
 
 ### **Recomendaciones**
+
+**1. Revisar Estrategias de Descuento:** Evalúar el impacto de los descuentos en la percepción de calidad y ajustar las estrategias para evitar que los descuentos altos reduzcan las calificaciones.
+
+**2. Enfocarse en la Calidad del Producto:** Garantizar la calidad de los productos, especialmente en categorías con alta polarización de opiniones, como "Computers & Accessories".
+
+**3. Mejorar la Comunicación del Valor del Producto:** Comunica claramente el valor de los productos en categorías con descuentos altos para contrarrestar la percepción de menor calidad.
+
+**4. Monitorear Sentimientos en Reseñas:** Utiliza el análisis de sentimiento como una herramienta complementaria para identificar tendencias de satisfacción del cliente y posibles áreas de mejora.
+
+**5. Segmentar Estrategias por Categoría:** Desarrolla estrategias de marketing y desarrollo de productos específicas para cada categoría, basadas en las tendencias de satisfacción y calificación observadas.
+
+**6. Optimizar la Gestión de Reseñas:** Implementa un sistema proactivo para gestionar reseñas negativas y responder a las preocupaciones de los clientes para mejorar la percepción del producto.
 
 
 ## **Recursos**
