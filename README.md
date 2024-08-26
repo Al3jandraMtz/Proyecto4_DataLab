@@ -676,7 +676,7 @@ Hay una correlación débil entre el número de reseñas y la calificación prom
 
 **10. Estrategias de marketing dirigidas:**
 
- Los diferentes niveles de satisfacción y correlaciones en cada categoría sugieren la necesidad de estrategias de marketing y mejoras específicas para cada segmento.
+1 Los diferentes niveles de satisfacción y correlaciones en cada categoría sugieren la necesidad de estrategias de marketing y mejoras específicas para cada segmento.
 
 ### **Recomendaciones**
 
