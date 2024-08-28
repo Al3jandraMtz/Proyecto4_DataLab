@@ -693,7 +693,9 @@ Los diferentes niveles de satisfacción y correlaciones en cada categoría sugie
 **6. Optimizar la Gestión de Reseñas:** Implementa un sistema proactivo para gestionar reseñas negativas y responder a las preocupaciones de los clientes para mejorar la percepción del producto.
 
 
-## **Recursos**
+## **Dashboard**
+
+Tableu [aquí](https://drive.google.com/file/d/1GdkslQ3pPk7i1k2rmBQY7mdTkbuySkSC/view?usp=sharing)
 
 ### Presentación del Proyecto 
 Accede a la presentación del proyecto haciendo clic [aquí](https://drive.google.com/file/d/1GdkslQ3pPk7i1k2rmBQY7mdTkbuySkSC/view?usp=sharing)
