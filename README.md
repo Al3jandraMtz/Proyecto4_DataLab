@@ -695,7 +695,7 @@ Los diferentes niveles de satisfacción y correlaciones en cada categoría sugie
 
 ## **Dashboard**
 
-Tableu [aquí](https://drive.google.com/file/d/1GdkslQ3pPk7i1k2rmBQY7mdTkbuySkSC/view?usp=sharing)
+Tableu [aquí](DataLab-amazon.twb)
 
 ### Presentación del Proyecto 
 Accede a la presentación del proyecto haciendo clic [aquí](https://drive.google.com/file/d/1GdkslQ3pPk7i1k2rmBQY7mdTkbuySkSC/view?usp=sharing)
