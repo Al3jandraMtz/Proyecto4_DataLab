@@ -1,5 +1,8 @@
 # Proyecto4_DataLab
 
+![Data Lab- Amazon](https://github.com/user-attachments/assets/588e6f0f-77ac-4885-b152-40841a8abb3f)
+
+
 ### Temas
 
 - [Introducción](#introducción)
