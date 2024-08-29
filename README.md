@@ -413,7 +413,7 @@ Metodología:
 
   El análisis realizado no encontró correlaciones negativas significativas entre el número de reseñas negativas y la calificación promedio de los productos en ninguna de las categorías analizadas. Esto sugiere que, aunque existen relaciones negativas en algunas categorías, estas no son lo suficientemente fuertes como para ser consideradas estadísticamente significativas. Este resultado indica que otros factores podrían estar influyendo en las calificaciones de los productos, más allá del simple conteo de reseñas negativas.
 
-### 3. Hipótesis sobre la Calificación Promedio y el Número de Seseñas
+### 3. Hipótesis sobre la Calificación Promedio y el Número de Reseñas
 
 "Un mayor número de reseñas está asociado con una mayor calificación promedio de los productos."
 
@@ -532,7 +532,7 @@ La hipótesis 6 está respaldada por los datos. Existe una relación fuerte entr
 
 **Interpretación:**
 
-Los productos con un alto descuento (mayor a 62%) tienen 3.03 probabilidades de tener una calificación baja (menor a 3 estrellas) en comparacíon a otros productos con bajo o nulo descuento.
+  Los productos con un alto descuento (mayor a 62%) tienen 3.03 probabilidades de tener una calificación baja (menor a 3 estrellas) en comparacíon a otros productos con bajo o nulo descuento.
 
 **2. Riesgo Relativo de una Calificación Alta por Categoría de Producto**
 
@@ -573,7 +573,7 @@ Hipótesis:
 >![alt text](Imagenes/chi2.png)
 
 **Interpretación:**
-* Frecuencias obesrvadas:
+* Frecuencias observadas:
    * False: Cantidad de reseñas negativas en la categoría.
   * True: Cantidad de reseñas positivas en la categoría.
 * Chi-cuadrado: (39.29%) La magnitid de la diferencia en las frecuencias observadas.
@@ -674,9 +674,6 @@ Hay una correlación débil entre el número de reseñas y la calificación prom
 
  Los productos con descuentos altos tienen un mayor riesgo de obtener calificaciones bajas, particularmente en categorías como "Home & Kitchen".
 
-**10. Estrategias de marketing dirigidas:**
-
-Los diferentes niveles de satisfacción y correlaciones en cada categoría sugieren la necesidad de estrategias de marketing y mejoras específicas para cada segmento.
 
 ### **Recomendaciones**
 
@@ -684,11 +681,9 @@ Los diferentes niveles de satisfacción y correlaciones en cada categoría sugie
 
 **2. Enfocarse en la Calidad del Producto:** Garantizar la calidad de los productos, especialmente en categorías con alta polarización de opiniones, como "Computers & Accessories".
 
-**3. Mejorar la Comunicación del Valor del Producto:** Comunica claramente el valor de los productos en categorías con descuentos altos para contrarrestar la percepción de menor calidad.
+**5. Monitorear Sentimientos en Reseñas:** Utilizar el análisis de sentimiento como una herramienta complementaria para identificar tendencias de satisfacción del cliente y posibles áreas de mejora.
 
-**4. Monitorear Sentimientos en Reseñas:** Utiliza el análisis de sentimiento como una herramienta complementaria para identificar tendencias de satisfacción del cliente y posibles áreas de mejora.
-
-**5. Segmentar Estrategias por Categoría:** Desarrolla estrategias de marketing y desarrollo de productos específicas para cada categoría, basadas en las tendencias de satisfacción y calificación observadas.
+**6. Segmentar Estrategias por Categoría:** Desarrollar estrategias de marketing y desarrollo de productos específicas para cada categoría, basadas en las tendencias de satisfacción y calificación observadas.
 
 **6. Optimizar la Gestión de Reseñas:** Implementa un sistema proactivo para gestionar reseñas negativas y responder a las preocupaciones de los clientes para mejorar la percepción del producto.
 
@@ -699,5 +694,5 @@ Tableu 1era parte [aquí](https://public.tableau.com/app/profile/teresa.alejandr
 
 Tableu 2da parte [aquí](https://public.tableau.com/app/profile/teresa.alejandra.martinez.vargas/viz/DataLab-amazon/Dashboard2?publish=yes)
 
-### Presentación del Proyecto 
+## Presentación del Proyecto 
 Accede a la presentación del proyecto haciendo clic [aquí](https://drive.google.com/file/d/1GdkslQ3pPk7i1k2rmBQY7mdTkbuySkSC/view?usp=sharing)
