@@ -150,9 +150,7 @@ Tabla: amazon_review
 
 Se detectan variables con una cadena de valores dividida por comas o puntos en una misma varible ("user_id", "user_name","review_title", "review_id", "review_content"). 
 
-En el proceso de limpieza y transformación se dividió la categoría de los productos en varias columnas para facilitar su análisis. También se limpió la columna que describe los productos eliminando caracteres no deseados, como emojis, paréntesis y espacios innecesarios, asegurando que el texto quedara libre de ruido.
-
-Adicionalmente, se analizó la columna de identificadores de usuarios, contando cuántos ID estaban presentes en cada registro. Las reseñas también fueron limpiadas de signos, emojis y otros caracteres no alfabéticos, dejando solo el texto relevante para el análisis. Estas transformaciones permiten trabajar con un conjunto de datos más estructurado y limpio, adecuado para análisis posteriores y generación de insights. Concluyendo en una sola tabla que se llama datset.
+En el proceso de limpieza, se analizó la columna de identificadores de usuarios, contando cuántos ID estaban presentes en cada registro. Las reseñas también fueron limpiadas de signos, emojis y otros caracteres no alfabéticos, dejando solo el texto relevante para el análisis. Estas transformaciones permiten trabajar con un conjunto de datos más estructurado y limpio, adecuado para análisis posteriores y generación de insights. Concluyendo en una sola tabla que se llama datset.
 
 >
 >![alt text](Imagenes/ValoresFuera.png)
@@ -401,7 +399,7 @@ Metodología:
   * **Distribución de Datos:**
   La mayoría de los productos tienen pocas o ninguna reseña negativa, concentrándose en la parte superior izquierda de la gráfica, lo que indica altas calificaciones promedio.
 
-  * **Correlación Observada:**
+  * **Correlación:**
   Aunque algunos productos tienen reseñas negativas, esto no afecta significativamente la calificación promedio. La correlación de Pearson (-0.0819) muestra una leve tendencia negativa, pero no fuerte.
 
   * **Significado del Valor p:**
@@ -414,7 +412,7 @@ Metodología:
 
   **Conclusiones:**
 
-  El análisis realizado no encontró correlaciones negativas significativas entre el número de reseñas negativas y la calificación promedio de los productos en ninguna de las categorías analizadas. Esto sugiere que, aunque existen relaciones negativas en algunas categorías, estas no son lo suficientemente fuertes como para ser consideradas estadísticamente significativas. Este resultado indica que otros factores podrían estar influyendo en las calificaciones de los productos, más allá del simple conteo de reseñas negativas.
+  El análisis realizado no encontró correlaciones negativas significativas entre el número de reseñas negativas (Considerando que solo se tienen 9 reseñas negativas en el estudio) y la calificación promedio de los productos en ninguna de las categorías analizadas. Lo que podría sugerir que aunque existen relaciones negativas en algunas categorías, estas no son lo suficientemente fuertes como para ser consideradas estadísticamente significativas.
 
 ### 3. Hipótesis sobre la Calificación Promedio y el Número de Reseñas
 
@@ -432,7 +430,7 @@ Metodología:
 **Interpretación:**
 
 * El coeficiente de correlación es 0.099, indica una relación positiva muy débil entre el número de reseñas y la calificación promedio.
-* El valor p es extremadamente bajo (0.000315), lo que nos dice que la correlación observada no es una coincidencia. Aunque la relación entre las variables es débil, la baja probabilidad de que ocurra por azar confirma que es significativa desde el punto de vista estadístico.
+* El valor p es extremadamente bajo (0.000315), lo que nos dice que hay una relación real entre las variables.
 
 **Conclusiones**
 
