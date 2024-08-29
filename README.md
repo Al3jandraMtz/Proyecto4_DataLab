@@ -702,4 +702,4 @@ Tableu 1era parte [aquí](https://public.tableau.com/app/profile/teresa.alejandr
 Tableu 2da parte [aquí](https://public.tableau.com/app/profile/teresa.alejandra.martinez.vargas/viz/DataLab-amazon/Dashboard2?publish=yes)
 
 ## Presentación del Proyecto 
-Accede a la presentación del proyecto haciendo clic [aquí](https://drive.google.com/file/d/1GdkslQ3pPk7i1k2rmBQY7mdTkbuySkSC/view?usp=sharing)
+Accede a la presentación del proyecto haciendo clic [aquí](https://www.loom.com/share/a60c807883a440969666e495dd5edefd?sid=874872a1-fdb7-49c8-86c0-182cfc36f778)
