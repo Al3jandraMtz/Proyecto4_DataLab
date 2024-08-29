@@ -381,13 +381,17 @@ El concepto de que "los productos con mayores descuentos suelen tener calificaci
 
  "Un mayor número de reseñas negativas está asociado con una menor calificación promedio de los productos."
 
-Metodología:
+**Metodología:**
   
-1. Utilizamos la calificación promedio de los productos como la variable dependiente.
-2. Definimos las reseñas negativas en función del análisis de sentimiento, considerando como negativas aquellas reseñas cuyo puntaje de sentimiento era menor o igual a 0.
-3. Los productos fueron segmentados por categorías (category_1, category_2, category_3, y category_4) para analizar la relación dentro de cada categoría.
-4. Se calculó la correlación de Pearson entre el número de reseñas negativas y la calificación promedio dentro de cada categoría de productos.
-5. Significancia Estadística: Se utilizó el valor p para determinar la significancia estadística de las correlaciones. Un valor p menor a 0.05 indicaría que la correlación es significativa.
+  **1.** Utilizamos la calificación promedio de los productos como la variable dependiente.
+
+  **2.** Definimos las reseñas negativas en función del análisis de sentimiento, considerando como negativas aquellas reseñas cuyo puntaje de sentimiento era menor o igual a 0.
+
+  **3.** Los productos fueron segmentados por categorías (category_1, category_2, category_3, y category_4) para analizar la relación dentro de cada categoría.
+
+  **4.** Se calculó la correlación de Pearson entre el número de reseñas negativas y la calificación promedio dentro de cada categoría de productos.
+
+  **5.** Significancia Estadística: Se utilizó el valor p para determinar la significancia estadística de las correlaciones. Un valor p menor a 0.05 indicaría que la correlación es significativa.
 
 >>>
 >>>![alt text](Imagenes/h2.1.png)
@@ -418,10 +422,11 @@ Metodología:
 
 "Un mayor número de reseñas está asociado con una mayor calificación promedio de los productos."
 
-Metodología:
+**Metodología:**
 
-1. Se calcula la correlación entre variables
-2. Se filtro la cantidad de reseñas.
+**1.** Se calcula la correlación entre variables
+
+**2.** Se filtro la cantidad de reseñas.
 
 >
 >![alt text](Imagenes/H3.png)
@@ -434,16 +439,17 @@ Metodología:
 
 **Conclusiones**
 
-La Hipótesis es Parcialmente Válida: Aunque existe una correlación estadísticamente significativa entre el número de reseñas y la calificación promedio, la fuerza de esta relación es extremadamente débil (correlación de 0.099). Esto sugiere que el número de reseñas por sí solo no es un predictor fuerte de una calificación promedio más alta ni de una calificación promedio.
+La Hipótesis es Parcialmente Válida: Aunque existe una correlación estadísticamente significativa entre el número de reseñas y la calificación promedio, la fuerza de esta relación es débil (correlación de 0.099). Esto sugiere que el número de reseñas por sí solo no es un predictor fuerte de una calificación promedio más alta ni de una calificación promedio.
 
 ### 4. Hipótesis sobre Palabras Clave en Reseñas de Productos Altamente Calificados:
 
  "Las palabras clave más comunes en las reseñas positivas están asociadas con características específicas del producto, como la facilidad de uso o el rendimiento.”
 
- Metodología:
+ **Metodología:**
  
- 1. Segmentación de palabras positivas.
- 2. Mapeo de caracteristicas clave del producto.
+ **1.** Segmentación de palabras positivas.
+
+ **2.** Mapeo de caracteristicas clave del producto.
 
 
 >
@@ -480,10 +486,11 @@ Estos resultados indican que las palabras clave más comunes en las reseñas pos
 
 "El análisis de sentimientos en las reseñas puede predecir con precisión la tendencia general de la satisfacción del cliente, indicando si es probable que aumente o disminuya en el futuro"
 
-Metodología:
+**Metodología:**
 
-1. Se realizo el calculo promedio de sentimiento y calificación.
-2. Se calcula la correlación entre variables
+**1.** Se realizo el calculo promedio de sentimiento y calificación.
+
+**2.** Se calcula la correlación entre variables
 
 
 >
@@ -507,8 +514,9 @@ La mayoría de los datos están concentrados alrededor de puntuaciones de sentim
 "Las categorías de productos que tienen una mayor calificación promedio también tienen una mayor satisfacción del cliente."
 
 **Metodología:**
-1. Agrupación de variables.
-2. Calcular la calificación promedio de cada variable.
+**1.** Agrupación de variables.
+
+**2.** Calcular la calificación promedio de cada variable.
 
 >
 >![alt text](Imagenes/10.png)
@@ -563,11 +571,11 @@ El riesgo relativo de 0.94 indica que, en términos estadísticos, la presencia 
 
 ## **Análisis de Significancia Estadística**
 
-Metodología:
+**Metodología:**
   1. Chi-cuadrado para probar la independencia entre la categoría de producto y la proporción de calificaciones altas.
 
-Hipótesis:
-* Alternativa (H1): Existe una relación significativa entre la categoría de producto y la probabilidad de obtener una calificación alta.
+**Hipótesis:**
+* Existe una relación significativa entre la categoría de producto y la probabilidad de obtener una calificación alta.
 
 
 >
@@ -583,17 +591,15 @@ Hipótesis:
 *Frecuencias esperadas: Muestran cómo se distribuirían las calificaciones si no hubiera ninguna relación entre las categorías de producto y las calificaciones altas. 
 
 
-Análisis de Categorías de Producto y Satisfacción del Cliente
+**Análisis de Categorías de Producto y Satisfacción del Cliente**
 
 1. Car&Motorbike:
-
-* Reseñas Negativas: Se esperaban aproximadamente 2.52 reseñas negativas, pero solo se observó 1 reseña negativa.
-* Reseñas Positivas: Se esperaban alrededor de 7.47 reseñas positivas, pero no se observó ninguna (0).
-Interpretación: Estos resultados sugieren que la categoría "Car&Motorbike" no está cumpliendo con las expectativas de satisfacción del cliente, ya que, aunque el número de reseñas negativas es menor de lo esperado, la falta total de reseñas positivas indica una clara deficiencia en la satisfacción del cliente en esta categoría.
+    * Reseñas Negativas: Se esperaban aproximadamente 2.52 reseñas negativas, pero solo se observó 1 reseña negativa.
+    * Reseñas Positivas: Se esperaban alrededor de 7.47 reseñas positivas, pero no se observó ninguna (0).
+    Interpretación: Estos resultados sugieren que la categoría "Car&Motorbike" no está cumpliendo con las expectativas de satisfacción del cliente, ya que, aunque el número de reseñas negativas es menor de lo esperado, la falta total de reseñas positivas indica una clara deficiencia en la satisfacción del cliente en esta categoría.
 2. Computers&Accessories:
-
-* Reseñas Negativas: Se esperaban aproximadamente 9.46 reseñas negativas, pero se observaron 66.
-* Reseñas Positivas: Se esperaban alrededor de 2.80 reseñas positivas, pero se observaron 309.
+    * Reseñas Negativas: Se esperaban aproximadamente 9.46 reseñas negativas, pero se observaron 66.
+    * Reseñas Positivas: Se esperaban alrededor de 2.80 reseñas positivas, pero se observaron 309.
 
 >
 >![alt text](Imagenes/Chi.png)
